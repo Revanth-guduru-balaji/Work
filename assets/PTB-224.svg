@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><!-- UML utilization SVG-->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="10 10 50 60 " style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+<style type="text/css">
+.bAVGkey600 {fill: #59baed;}
+.bAVGkey450 {fill:#a0ccef;}
+.bAVGkey300 {fill: #f7eec3;}
+.bAVGkey150 {fill: #eda29f;}
+.bAVGkeylow {fill: #ec7e79;}
+.DRY5 {fill: #59baed;stroke:#000000;stroke-miterlimit:10;stroke-width:2}
+.DRY4 {fill:#a0ccef;stroke:#000000;stroke-miterlimit:10;stroke-width:2}
+.DRY3 {fill: #f7eec3;stroke:#000000;stroke-miterlimit:10;stroke-width:2}
+.DRY2 {fill: #eda29f;stroke:#000000;stroke-miterlimit:10;stroke-width:2}
+.DRY1 {fill: #ec7e79;stroke:#000000;stroke-miterlimit:10;stroke-width:2}
+.st0{fill:#59baed;}
+.st1{text-align:center; font-family:'Frutiger';}
+.st2{font-size:9px;text-anchor:middle}
+.st3{font-weight:bold;}
+.st4{font-size:12px;text-anchor:middle}
+.st5{font-size:15px;text-anchor:middle}
+.st6{font-size:22px;text-anchor:middle}
+</style>
+<g id="PTB-224">
+<rect x="10" y="10" width="50.0" height="60.0" class="bAVGkey450" />
+<text id="lbl_PTB-224" class="st1 st2" x="35.0" y="25" fill="black">PTB-224</text>
+<text id="util_PTB-224" class="st1 st4 st3" x="35.0" y="40" fill="black">.537</text>
+</g>
+</svg>
