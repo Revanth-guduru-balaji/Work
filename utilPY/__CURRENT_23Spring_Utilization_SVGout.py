@@ -7,7 +7,7 @@ import CURR_utilLib as uLib
 import CURR_pyodbcLib as p
 #import CURR_schedDetail as schedDet
 import CURR_svg as svgOut
-import CURR_utilHTML as uHTML
+import utilPY.CURR_utilHTML as uHTML
 
 def outputUtilbyRoom(theRooms):
     #["BUILDING_UML_ID"],SpInv[r]["BUILDING_CAMPUS"]
