@@ -215,7 +215,7 @@ for r in sorted(theRooms):
 """
 
 utilCSV = outputUtilbyRoom(theRooms)
-ofile = open("C:\\temp\\utilCSV.csv","w")
+ofile = open("utilCSV.csv","w")
 ofile.write(utilCSV)
 ofile.close()
 
@@ -256,7 +256,7 @@ print("SpInv util:", (rawWSCH/(40*spInvSeats)))
 print("Overall Fall 2023 Utilization:", (rawWSCH/(40*spInvSeats)))
 
 #uHTML.make_schedDetail_1room("PTB-150", theRooms, SoC, spInvRooms)
-uHTML.make_schedDetail(theRooms, SoC, spInvRooms)
+#uHTML.make_schedDetail(theRooms, SoC, spInvRooms)
 
 """
                 count what needs to counted!"print "****", r, d, i

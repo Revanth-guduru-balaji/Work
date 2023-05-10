@@ -1,3 +1,4 @@
+import os
 def rmSize(seats):
     # new (AI) sizes: small - 50x45, 60x50, 60x70
     try:
@@ -192,9 +193,17 @@ def svgClassroomOut(campus, campusName, baseX):
     oStr += "<g id=\"classrooms\">\n"
     oStr += oStr2
     oStr += "</g></svg>\n"
-    ofile = open("C:\\temp\\2021F_Util\\" + campusName + "_test.svg","w")
-    ofile.write(oStr)
-    ofile.close()
+    # Define the directory and file path
+    directory = "2021F_Util"
+    filepath = directory+"/"+campusName + "_test.svg"
+
+    # Create the directory if it does not exist
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    # Write to the file
+    with open(filepath, "w") as f:
+        f.write(oStr)
 
 def svgClassLabOut(campus, campusName, baseX, labCat):
     maxX = baseX + 50.
@@ -255,9 +264,17 @@ def svgClassLabOut(campus, campusName, baseX, labCat):
     oStr += "<g id=\"classrooms\">\n"
     oStr += oStr2
     oStr += "</g></svg>\n"
-    ofile = open("C:\\temp\\2021F_Util\\" + campusName + "_ClassLabtest.svg","w")
-    ofile.write(oStr)
-    ofile.close()
+    # Define the directory and file path
+    directory = "2021F_Util"
+    filepath = directory+"/"+campusName + "_ClassLabtest.svg"
+
+    # Create the directory if it does not exist
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    # Write to the file
+    with open(filepath, "w") as f:
+        f.write(oStr)
 
 
 
@@ -351,7 +368,9 @@ def makeSVGroom2(r,rmName):
     return(retVal)
 
 def svgRoomOut(r,rmName, labCat):
-    oDir = "C:\\temp\\_SVG\\"
+    directory = "SVG"
+    
+    # oDir = "C:\\temp\\_SVG\\"
     """
     for l in labCat:
         for k in labCat[l]:
@@ -388,16 +407,24 @@ def svgRoomOut(r,rmName, labCat):
     if currCampus in validCampuses:
         if  currUse == "CLASSROOM":
             #ofile = open( (oDir + currCampus + "\\" + currUse + "\\" + rmName + ".svg"),"w")
-            ofile = open( (oDir +  "SP23\\" +  rmName + ".svg"),"w")
             oStr += makeSVGroom2(r,rmName)
             oStr += "</svg>\n"
-            ofile.write(oStr)
-            ofile.close()
+
+            filepath = directory+"/"+  rmName + ".svg"
+            # Create the directory if it does not exist
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+            # Write to the file
+            with open(filepath, "w") as f:
+                f.write(oStr)
+
         elif currUse  == "CLASS LABORATORY":
-            ofile = open( (oDir + currCampus + "\\" + currUse + "\\" + rmName + ".svg"),"w")
-            #def makeSVGlab(rmName, rmHrs, labType, xpos, ypos):
-            #oStr2,ignoreX, ignoreY = makeSVGlab(rmName, r["RM_HRS"],labCat[r]["LAB_MAJOR_CATEGORY"],0,0)
-            #oStr2,ignoreX, ignoreY = makeSVGlab(rmName, r["RM_HRS"],"STEM",0,0)
+            
+            filepath = directory+"/"+ rmName + ".svg"
+            # Create the directory if it does not exist
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+           
             print(rmName)
             try:
                 currCat = labCat[rmName]["LAB_MAJOR_CATEGORY"]
@@ -406,14 +433,16 @@ def svgRoomOut(r,rmName, labCat):
                 currCat = "STEM"
             oStr2,ignoreX, ignoreY = makeSVGlab(rmName, r["RM_HRS"],currCat,0,0)
             oStr += oStr2 + "</svg>\n"
-            ofile.write(oStr)
-            ofile.close()
+             # Write to the file
+            print(filepath)
+            with open(filepath, "w") as f:
+                f.write(oStr)
 
 def svgLabCSVout(labRMU):
     # oct 31, 2022 cCSV file with just labs, room hours calculated from SOC, has lab categories
     # ['WEE-311', '28.33333333', '0.708333333', 'Biology', 'STEM', 'South']
     # need to add phys labs
-    oDir = "C:\\temp\\_SVG\\"
+    
     oStr = "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
     oStr += "<!-- UML utilization SVG-->\n"
     oStr += "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" "
@@ -436,13 +465,21 @@ def svgLabCSVout(labRMU):
     currCampus = labRMU[5]
     currUse = "CLASS LABORATORY"
     rmName = labRMU[0]
-    print (oDir + currCampus + "\\" + currUse + "\\" + rmName + ".svg")
-    #ofile = open( (oDir + currCampus + "\\" + currUse + "\\" + rmName + ".svg"),"w")
-    ofile = open( (oDir + "SP23\\" + rmName + ".svg"),"w")
+    
+   
+  
     currCat = labRMU[4]
 
     oStr2,ignoreX, ignoreY = makeSVGlab(rmName, labRMU[1],currCat,0,0)
     oStr += oStr2 + "</svg>\n"
-    ofile.write(oStr)
-    ofile.close()
+    directory = "SVG"
+    filepath = directory+"/"+ "SP23/" + rmName + ".svg"
+    print (directory + currCampus + "\\" + currUse + "\\" + rmName + ".svg")
+    # Create the directory if it does not exist
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    # Write to the file
+    with open(filepath, "w") as f:
+        f.write(oStr)
+        
     print("OKOK")

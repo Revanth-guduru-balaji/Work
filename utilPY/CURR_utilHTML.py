@@ -1,5 +1,5 @@
 from datetime import datetime
-
+import os
 """
 2020-01-01
 Should add a way to get number of stations for classrooms and class labs
@@ -202,6 +202,7 @@ def writeHeaderCLASSROOM(roomID, rmUse, category, phys_cap, bAvg, rmHrs, WSCH):
         bAvg = 0.000
     """
     classStr = bAvgCategory(bAvg)
+    print(bAvg)
     if bAvg[0] == "0":
         bAvg = bAvg[1:5]
     else:
@@ -230,7 +231,7 @@ def writeHeaderCLASSROOM(roomID, rmUse, category, phys_cap, bAvg, rmHrs, WSCH):
 #def writeHeader(roomID, rmUse, category, phys_cap,bAvg, rmHrs, WSCH):
 def writeHeader(roomID, theRoom):
     rmUse = theRoom["USE"]
-    category = theRoom["LAB_CAT"]
+    category = 20
     phys_cap = theRoom["SEAT_CAP"]
     bAvg = theRoom["UTIL"]
     rmHrs = theRoom["RM_HRS"]
@@ -399,16 +400,26 @@ def make_schedDetail(theRooms, SoC, spInvRooms):
     days = ("M","T","W","R","F")
     startTimes2 = build_startTimes()
     for r in theRooms:
-        ofile = open("C:\\temp\\t\\" + r + "_schedDetail.html","w")
+        # Define the directory and file path
+        directory = "HTML"
+        filepath = directory+"/"+ r + "_schedDetail.html"
+
+        # Create the directory if it does not exist
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+
+              
+        
         try:
             rmUse = theRooms[r]["USE"]
         except:
             rmUse = "OTHER/NON-ROOM"
             #writeHeader(roomID, rmUse, category, phys_cap,bAvg, rmHrs, WSCH):
-        ofile.write(writeHeader(r, theRooms[r]["USE"], 20, theRooms[r]["PHYS_CAP"],str(theRooms[r]["BAvg"]),theRooms[r]["RM_HRS"], theRooms[r]["WSCH"]))
-        #writeBody(startTimes, days, roomData, phys_cap, tstamp):
-        tstamp = tstamper()
-        ofile.write(writeBody(startTimes2, days, theRooms[r], 20,tstamp))
-        ofile.write(writeFooter())
-        ofile.close()
+        # Write to the file
+        with open(filepath, "w") as f:
+            f.write(writeHeader(r, theRooms[r]))  
+            tstamp = tstamper()
+            f.write(writeBody(startTimes2, days, theRooms[r], 20,tstamp))
+            f.write(writeFooter())
+            f.close()
 print("utilHTML reloaded")
