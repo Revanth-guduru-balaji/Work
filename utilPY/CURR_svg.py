@@ -19,6 +19,23 @@ def rmSize(seats):
         retVal_w = 100.
         retVal_h = 90.
     """
+    #if seats>0 and seats<17:
+        # Seminar
+    #elif seats>17 and seats<34:
+        #small
+        # retVal_w = 50.
+        # retVal_h = 45.
+    #elif seats>34 and seats<50:
+        # medium
+        # retVal_w = 50.
+        # retVal_h = 60.
+    #elif seats>50 and seats<76:
+        #large
+        # retVal_w = 70.
+        # retVal_h = 60.
+    #elif seats>76:
+        #lecture
+        
     if seats > 74.:
         retVal_w = 70.
         retVal_h = 60.
