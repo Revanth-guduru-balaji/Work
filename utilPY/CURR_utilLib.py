@@ -107,7 +107,7 @@ def makeRoom(theRooms, r):
 
 # Need space inventory to crosswalk SoC rooms -- and capacities
 class Course(object):
-    newID = itertools.count().next
+    newID = itertools.count()
     def __init__(self, career, term, course, comp, title, instructor, status, campus, room,
                  imode, credit, cap, enrolled, perm, mtgNum, hrs, days, college, dept, session, WSCH,
                duration, crossList):
@@ -135,7 +135,7 @@ class Course(object):
         self.duration = 0
         self.crossList = crossList
         self.doubleDip = [] # was an int, count changing to list of IDs
-        self.ID = Course.newID()
+        self.ID = next(Course.newID)
 
 def getCourse_fromID(SoC, i):
     for c in SoC:

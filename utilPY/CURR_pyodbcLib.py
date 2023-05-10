@@ -27,7 +27,7 @@ def get_SoC():
             # add each field value, using field name as key
             #print row
             try:
-                currRow[field_names[j]] = row[j].encode('utf-8').strip() # CHECK THIS! Had trouble with decimal            
+                currRow[field_names[j]] = row[j].strip() # CHECK THIS! Had trouble with decimal            
             except:
                 currRow[field_names[j]] = str(row[j]) # CHECK THIS! Had trouble with decimal
         # add current row's data, using space name as key
