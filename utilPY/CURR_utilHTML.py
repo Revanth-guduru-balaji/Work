@@ -129,7 +129,7 @@ def writeTopTableCR(bAvg, rmHrs):
     cc = 0 # just a counter for except errors
     try:
         bAvgCat = bAvgCategory(bAvg)
-        if (bAVG != "bAVG_NA"):
+        if (bAvg != "bAVG_NA"):
             if (float(bAvg) < 1):
                 bAvg = bAvg[-4:]
     except:
