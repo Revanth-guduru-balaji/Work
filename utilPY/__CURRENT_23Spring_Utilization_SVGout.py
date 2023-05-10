@@ -76,7 +76,7 @@ for i in SQLsched:
     defaultWSCH = 0.0
     defaultDuration = 0.0
     try:
-        print SQLsched["StartDate"]
+        print(SQLsched["StartDate"])
     except:
         ignoreThis = 0
     args = [SQLsched[i]["Career"],SQLsched[i]["Term"],SQLsched[i]["Course"],SQLsched[i]["Comp"],SQLsched[i]["Title"],SQLsched[i]["Instructor"],SQLsched[i]["Status"],\
@@ -130,7 +130,7 @@ for i in SQLsched:
     else:
         theRooms[currCourse.room]["WSCH"] += currCourse.WSCH
     courseCount += 1
-print "Total Courses:", courseCount
+print("Total Courses:", courseCount)
 
 #================================== SoC Loop done ====================================
 for c in SoC: # loop on SoC
@@ -176,7 +176,7 @@ for r in theRooms:
             try:
                 spInvSeats += float(theRooms[r]["PHYS_CAP"])        
             except:
-                print "Check PHYS_CAP", r
+                print("Check PHYS_CAP", r)
             try:
                 theRooms[r]["BAvg"] = theRooms[r]["WSCH"]/(40.*float(theRooms[r]["PHYS_CAP"]))
             except:
@@ -236,16 +236,16 @@ for i in SoC:
         allWSCH += i.WSCH
 
 
-print "SoC classrooms", len(SoCclassrms)
-print "SoC Raw WSCH Calc", rawWSCH, "SoC all WSCH:", (rawWSCH + allWSCH)
-print "SpInv classroom count", spInvClassrooms, " and seats", spInvSeats
+print("SoC classrooms", len(SoCclassrms))
+print("SoC Raw WSCH Calc", rawWSCH, "SoC all WSCH:", (rawWSCH + allWSCH)) 
+print("SpInv classroom count", spInvClassrooms, " and seats", spInvSeats)
 #print "Excel says all Raw WSCH is", XLrawWSCH, " and all WSCH is", XLallWSCH 
 #print "Excel says SoC classroom count is", XLcrCount, " and seats", XLseatCount
 #print "WSCH compare: py/excel", (rawWSCH/XLrawWSCH)
 #print "EXcel util:", (XLrawWSCH/(40*spInvSeats))
-print "SpInv util:", (rawWSCH/(40*spInvSeats))
+print("SpInv util:", (rawWSCH/(40*spInvSeats)))
 
-print "Overall Fall 2023 Utilization:", (rawWSCH/(40*spInvSeats))
+print("Overall Fall 2023 Utilization:", (rawWSCH/(40*spInvSeats)))
 
 #uHTML.make_schedDetail_1room("PTB-150", theRooms, SoC, spInvRooms)
 uHTML.make_schedDetail(theRooms, SoC, spInvRooms)

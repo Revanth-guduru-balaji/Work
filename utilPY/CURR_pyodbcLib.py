@@ -33,7 +33,7 @@ def get_SoC():
         # add current row's data, using space name as key
         SoC[i] = currRow
         i += 1
-    print "pydobc sched rows: ", i
+    print("pydobc sched rows: ", i)
     return(SoC)
   
 def get_SpInv():

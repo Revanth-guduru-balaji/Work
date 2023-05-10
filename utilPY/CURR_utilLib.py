@@ -188,7 +188,7 @@ def output_rmHrs2(theRooms):
                     if currLen > 1:
                         rms_in_use += 1
             oStr += str(rms_in_use) + ","
-            print rms_in_use
+            print(rms_in_use)
         oStr += "\n"
         ofile.write(oStr)
     ofile.close()
@@ -199,7 +199,7 @@ def output_lab_rmHrs(theRooms, labCat):
     for r in theRooms:
         if theRooms[r]["USE"] != "NOT_A_ROOM":
             if theRooms[r]["USE"] == "CLASS LABORATORY" and r in labCat:
-                print r, theRooms[r]["USE"], theRooms[r]["RM_HRS"], labCat[r]["LAB_CATEGORY"],labCat[r]["LAB_MAJOR_CATEGORY"]
+                print(r, theRooms[r]["USE"], theRooms[r]["RM_HRS"], labCat[r]["LAB_CATEGORY"],labCat[r]["LAB_MAJOR_CATEGORY"])
             #else:
                 #print r, theRooms[r]["USE"], theRooms[r]["RM_HRS"]
     #for l in labCat:
@@ -242,7 +242,7 @@ def bAvg_byBldg(theRooms):
                 bldg_bAvg[currBldg]["PHYS_CAP"] += theRooms[r]["PHYS_CAP"]
 
     for b in bldg_bAvg:
-        print b, bldg_bAvg[b]["WSCH"], bldg_bAvg[b]["PHYS_CAP"], (float(bldg_bAvg[b]["WSCH"])/(40.*float(theRooms[r]["PHYS_CAP"])))
+        print(b, bldg_bAvg[b]["WSCH"], bldg_bAvg[b]["PHYS_CAP"], (float(bldg_bAvg[b]["WSCH"])/(40.*float(theRooms[r]["PHYS_CAP"]))))
 
 def output_RoomUseGrid(theRooms):
     ofile_north = open("C:\\temp\\north_cr_grid.csv","w")
@@ -293,8 +293,8 @@ def output_RoomHistogram(theRooms):
         # Done with current time slot - output line of values
         oStrNorth += "\n"
         oStrSouth += "\n"
-        print i, oStrNorth
-        print i, oStrSouth
+        print(i, oStrNorth)
+        print(i, oStrSouth)
         ofile_north.write(oStrNorth)
         ofile_south.write(oStrSouth)
     ofile_north.close()

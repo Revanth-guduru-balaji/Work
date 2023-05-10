@@ -190,7 +190,7 @@ def writeHeaderCLASSROOM(roomID, rmUse, category, phys_cap, bAvg, rmHrs, WSCH):
     #def writeHeader(roomID, rmUse, rmHrs, WSCH):
     # Calcs
     #print "@@@@@", roomID, bAvg
-    print "HELLO"
+    print("HELLO")
     RMU = rmHrs/40.
     photoURL = "https://www.uml.edu/service/Apps/Facilities/RoomCapture/Rooms/View?building="
     photoURL2 = "&room="
@@ -220,7 +220,7 @@ def writeHeaderCLASSROOM(roomID, rmUse, category, phys_cap, bAvg, rmHrs, WSCH):
         pURL = photoURL + toks[0] + photoURL2 + toks[1]
         oStr += "<h6><a href='" + pURL + "'>Photos of: " + roomID + "</a></h6>"
     except:
-        print "no photosphere"
+        print("no photosphere")
     oStr += writeTopTableCR(bAvg, rmHrs)
     #print ("Photosphere link:" + photoURL + toks[0] + photoURL2 + toks[1]) 
     #https://www.uml.edu/service/Apps/Facilities/RoomCapture/Rooms/View?building=BAL&room=412
@@ -248,12 +248,12 @@ def writeHeader(roomID, theRoom):
     # 2 different scales: 50% is good, 75% great
     # or, more like classrooms, 5 steps (in fact, same, right?)
     else:
-        print "::::", category
+        print("::::", category)
         if category == "NA":
             denom = 40.
         else:
             denom = category
-        print rmHrs, type(rmHrs), denom, type(denom)
+        print(rmHrs, type(rmHrs), denom, type(denom))
         RMU = rmHrs/denom
 
         oStr = "<HTML><HEAD><title>" + roomID + "</title>"
@@ -411,4 +411,4 @@ def make_schedDetail(theRooms, SoC, spInvRooms):
         ofile.write(writeBody(startTimes2, days, theRooms[r], 20,tstamp))
         ofile.write(writeFooter())
         ofile.close()
-print "utilHTML reloaded"
+print("utilHTML reloaded")

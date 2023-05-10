@@ -79,7 +79,7 @@ def rmHrCat(rmHrs, rmCat):
         else:
             retVal = "DRY1"
     else:
-        print "error: check lab major category"
+        print("error: check lab major category")
     return retVal
 
 def addBldgLabel(b, xpos, ypos):
@@ -167,19 +167,19 @@ def svgClassroomOut(campus, campusName, baseX):
     for b in reversed(sorted(campus)):
         currX = illustPos[b][0]
         currY = illustPos[b][1]
-        print "start", b, " at Y=", currY,"\n"
+        print("start", b, " at Y=", currY,"\n")
         for f in sorted(campus[b]):
             maxX = currX
-            print "==========", b
+            print("==========", b)
             for r in sorted(campus[b][f]["rooms"]):
-                print "\t>>>", r
+                print("\t>>>", r)
                 currUtil = campus[b][f]["rooms"][r]["BAvg"]
                 moreStr,wdth,ht = makeSVGroom(r,currUtil, campus[b][f]["rooms"][r]["PHYS_CAP"],maxX,currY)
                 oStr2 += moreStr
                 maxX += wdth + gapX
-                print maxX, currY, r
+                print(maxX, currY, r)
             currY -= gapY_sameBldg
-            print "********************** done with floor, increment Y", currY
+            print("********************** done with floor, increment Y", currY)
                     
 
     #oStr += "viewBox=\"0 0 4000 " + str(currY) + "\" style=\"enable-background:new 0 0 1366 768;\" xml:space=\"preserve\">\n"
@@ -231,7 +231,7 @@ def svgClassLabOut(campus, campusName, baseX, labCat):
                 try:
                     currCat = labCat[r]["LAB_MAJOR_CATEGORY"]
                 except:
-                    print "Not categorized", r
+                    print("Not categorized", r)
                     currCat = "Dry"
                 #print r, currCat
                 moreStr,wdth,ht = makeSVGlab(r,currRmHrs,currCat,maxX,currY)
@@ -297,7 +297,7 @@ def output_svg(theRooms, labCat):
         elif currRoom["CAMPUS"] == "UMLSOUTH":
             if currRoom["USE"] == "CLASSROOM":
                 if currBldg not in southCR:
-                    print currBldg
+                    print(currBldg)
                     southCR[currBldg] = {currFlr:{"rooms":{r:currRoom}}}
                 else:
                     if currFlr not in southCR[currBldg]:
@@ -398,10 +398,10 @@ def svgRoomOut(r,rmName, labCat):
             #def makeSVGlab(rmName, rmHrs, labType, xpos, ypos):
             #oStr2,ignoreX, ignoreY = makeSVGlab(rmName, r["RM_HRS"],labCat[r]["LAB_MAJOR_CATEGORY"],0,0)
             #oStr2,ignoreX, ignoreY = makeSVGlab(rmName, r["RM_HRS"],"STEM",0,0)
-            print rmName
+            print(rmName)
             try:
                 currCat = labCat[rmName]["LAB_MAJOR_CATEGORY"]
-                print "OKOKOKOK", currCat
+                print("OKOKOKOK", currCat)
             except:
                 currCat = "STEM"
             oStr2,ignoreX, ignoreY = makeSVGlab(rmName, r["RM_HRS"],currCat,0,0)
@@ -445,4 +445,4 @@ def svgLabCSVout(labRMU):
     oStr += oStr2 + "</svg>\n"
     ofile.write(oStr)
     ofile.close()
-    print "OKOK"
+    print("OKOK")
