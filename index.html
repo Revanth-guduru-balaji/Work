@@ -6,15 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <div class="container_1">
-      <div class="Title">
-        <b>Spring 2023</b> North Campus <br />
-        Classroom Utilization
+      <div style="display: flex; justify-content: space-between">
+        <div class="Title">
+          <b>Spring 2023</b> North Campus <br />
+          Classroom Utilization
+        </div>
+        <div><button onclick="onCloseLayout(true)">&#10006;</button></div>
       </div>
       <img src="assets/Layout.PNG" alt="" />
     </div>
+    <button
+      id="openLayout"
+      style="display: none"
+      onclick="onCloseLayout(false)"
+    >
+      LayOut &#8250;
+    </button>
     <div class="container_2">
       <!-- ****************** Olsen Hall ******************  -->
       <div class="OLS">
@@ -65,164 +76,164 @@
         </div>
         <span class="Category_Name">Olsen Hall</span>
       </div>
-      <div class="BPO">
-        <!-- ****************** Ball Hall ******************  -->
-        <div class="BAL">
-          <div class="BAL_1">
-            <img src="assets/BAL-313.svg" />
-            <img src="assets/BAL-314.svg" />
-            <img src="assets/BAL-323.svg" />
-            <img src="assets/BAL-326.svg" />
-            <img src="assets/BAL-328.svg" />
-          </div>
-          <div class="BAL_2">
-            <img src="assets/BAL-206.svg" />
-            <img src="assets/BAL-208.svg" />
-            <img src="assets/BAL-210.svg" />
-            <img src="assets/BAL-214.svg" />
-          </div>
-          <span class="Category_Name">Ball Hall</span>
+      <!-- <div class="BPO"> -->
+      <!-- ****************** Ball Hall ******************  -->
+      <div class="BAL">
+        <div class="BAL_1">
+          <img src="assets/BAL-313.svg" />
+          <img src="assets/BAL-314.svg" />
+          <img src="assets/BAL-323.svg" />
+          <img src="assets/BAL-326.svg" />
+          <img src="assets/BAL-328.svg" />
         </div>
-        <!-- ****************** Perry Hall ******************  -->
-        <div class="PER">
-          <div class="PER_1">
-            <img src="assets/PER-107.svg" alt="" />
-            <img src="assets/PER-109.svg" alt="" />
-            <img src="assets/PER-111.svg" alt="" />
-          </div>
-          <span class="Category_Name">Perry Hall</span>
+        <div class="BAL_2">
+          <img src="assets/BAL-206.svg" />
+          <img src="assets/BAL-208.svg" />
+          <img src="assets/BAL-210.svg" />
+          <img src="assets/BAL-214.svg" />
         </div>
-        <!-- ****************** Olney Hall ******************  -->
-        <div class="OLN">
-          <div class="OLN_1">
-            <img src="assets/OLN-517.svg" alt="" />
-            <img src="assets/OLN-518.svg" alt="" />
-            <img src="assets/OLN-519.svg" alt="" />
-          </div>
-          <div class="OLN_2">
-            <img src="assets/OLN-204.svg" alt="" />
-            <img src="assets/OLN-218.svg" alt="" />
-            <img src="assets/OLN-316.svg" alt="" />
-          </div>
-          <div class="OLN_3">
-            <img src="assets/OLN-115.svg" alt="" />
-            <img src="assets/OLN-150.svg" alt="" />
-          </div>
-          
-          <span class="Category_Name">Olney Hall</span>
-        </div>
+        <span class="Category_Name">Ball Hall</span>
       </div>
-      <div class="SF">
-        <!-- ****************** Shah Hall ******************  -->
-        <div class="SHA">
-          <div class="SHA_1">
-            <img src="assets/SHA-301.svg" alt="" />
-            <img src="assets/SHA-302.svg" alt="" />
-            <img src="assets/SHA-303.svg" alt="" />
-            <img src="assets/SHA-304.svg" alt="" />
-            <img src="assets/SHA-305.svg" alt="" />
-            <img src="assets/SHA-306.svg" alt="" />
-            <img src="assets/SHA-308.svg" alt="" />
-            <img src="assets/SHA-310.svg" alt="" />
-          </div>
-          <div class="SHA_2">
-            <img src="assets/SHA-208.svg" alt="" />
-            <span class="Category_Name">Shah Hall</span>
-          </div>
+      <!-- ****************** Perry Hall ******************  -->
+      <div class="PER">
+        <div class="PER_1">
+          <img src="assets/PER-107.svg" alt="" />
+          <img src="assets/PER-109.svg" alt="" />
+          <img src="assets/PER-111.svg" alt="" />
+        </div>
+        <span class="Category_Name">Perry Hall</span>
+      </div>
+      <!-- ****************** Olney Hall ******************  -->
+      <div class="OLN">
+        <div class="OLN_1">
+          <img src="assets/OLN-517.svg" alt="" />
+          <img src="assets/OLN-518.svg" alt="" />
+          <img src="assets/OLN-519.svg" alt="" />
+        </div>
+        <div class="OLN_2">
+          <img src="assets/OLN-204.svg" alt="" />
+          <img src="assets/OLN-218.svg" alt="" />
+          <img src="assets/OLN-316.svg" alt="" />
+        </div>
+        <div class="OLN_3">
+          <img src="assets/OLN-115.svg" alt="" />
+          <img src="assets/OLN-150.svg" alt="" />
         </div>
 
-        <!-- ****************** Falmouth Hall ******************  -->
-        <div class="FAL">
-          <div class="FAL_1">
-            <img src="assets/FAL-209.svg" />
-            <img src="assets/FAL-309.svg" />
-            <img src="assets/FAL-311.svg" />
-          </div>
-          <span class="Category_Name">Falmouth Hall</span>
+        <span class="Category_Name">Olney Hall</span>
+      </div>
+      <!-- </div> -->
+      <!-- <div class="SF"> -->
+      <!-- ****************** Shah Hall ******************  -->
+      <div class="SHA">
+        <div class="SHA_1">
+          <img src="assets/SHA-301.svg" alt="" />
+          <img src="assets/SHA-302.svg" alt="" />
+          <img src="assets/SHA-303.svg" alt="" />
+          <img src="assets/SHA-304.svg" alt="" />
+          <img src="assets/SHA-305.svg" alt="" />
+          <img src="assets/SHA-306.svg" alt="" />
+          <img src="assets/SHA-308.svg" alt="" />
+          <img src="assets/SHA-310.svg" alt="" />
+        </div>
+        <div class="SHA_2">
+          <img src="assets/SHA-208.svg" alt="" />
+          <span class="Category_Name">Shah Hall</span>
         </div>
       </div>
+
+      <!-- ****************** Falmouth Hall ******************  -->
+      <div class="FAL">
+        <div class="FAL_1">
+          <img src="assets/FAL-209.svg" />
+          <img src="assets/FAL-309.svg" />
+          <img src="assets/FAL-311.svg" />
+        </div>
+        <span class="Category_Name">Falmouth Hall</span>
+      </div>
+      <!-- </div> -->
       <!-- ****************** Southwick Hall ******************  -->
-      <div class="SD">
-        <div class="SOU">
-          <div class="SOU_1">
-            <div
-              style="
-                position: absolute;
-                font-size: 9px;
-                font-weight: bold;
-                top: 0px;
-                text-indent: 50px;
-              "
-            >
-              COMPUTER LABS
-            </div>
-            <span
-              style="
-                display: grid;
-                grid-template-columns: repeat(3, 50px);
-                gap: 5px;
-                border: 1px dashed black;
-                padding: 0.5px;
-              "
-              ><img src="assets/SOU-121.svg" alt="" />
-              <img src="assets/SOU-302.svg" alt="" />
-              <img src="assets/SOU-309.svg" alt=""
-            /></span>
-            <img src="assets/SOU-313.svg" alt="" />
-            <img
-              src="assets/SOU-317.svg"
-              alt=""
-              style="border: 1px dashed black; padding: 0.5px"
-            />
+      <!-- <div class="SD"> -->
+      <div class="SOU">
+        <div class="SOU_1">
+          <div
+            style="
+              position: absolute;
+              font-size: 9px;
+              font-weight: bold;
+              top: 0px;
+              text-indent: 50px;
+            "
+          >
+            COMPUTER LABS
           </div>
-          <span class="Category_Name">Southwick Hall</span>
+          <span
+            style="
+              display: grid;
+              grid-template-columns: repeat(3, 50px);
+              gap: 5px;
+              border: 1px dashed black;
+              padding: 0.5px;
+            "
+            ><img src="assets/SOU-121.svg" alt="" />
+            <img src="assets/SOU-302.svg" alt="" />
+            <img src="assets/SOU-309.svg" alt=""
+          /></span>
+          <img src="assets/SOU-313.svg" alt="" />
+          <img
+            src="assets/SOU-317.svg"
+            alt=""
+            style="border: 1px dashed black; padding: 0.5px"
+          />
         </div>
-        <!-- ****************** Dandeneau Hall ******************  -->
-        <div class="DAN">
-          <div class="DAN_Name">
-            <div class="Category_Name">Dandeneau</div>
-            <div class="Category_Name">Hall</div>
-          </div>
-          <div class="DAN_1">
-            <img src="assets/DAN-321.svg" />
-            <img src="assets/DAN-220.svg" />
-          </div>
+        <span class="Category_Name">Southwick Hall</span>
+      </div>
+      <!-- ****************** Dandeneau Hall ******************  -->
+      <div class="DAN">
+        <div class="DAN_Name">
+          <div class="Category_Name">Dandeneau</div>
+          <div class="Category_Name">Hall</div>
+        </div>
+        <div class="DAN_1">
+          <img src="assets/DAN-321.svg" />
+          <img src="assets/DAN-220.svg" />
         </div>
       </div>
-      <div
+      <!-- </div> -->
+      <!-- <div
        class="PG"
-      >
-        <!-- ****************** Pulichino Tong Business Center ******************  -->
-        <div class="PTB">
-          <div class="PTB_1">
-            <img src="assets/PTB-222.svg" alt="" />
-            <img src="assets/PTB-224.svg" alt="" />
-          </div>
-          <div class="PTB_2">
-            <img src="assets/PTB-110.svg" alt="" />
-            <img src="assets/PTB-120.svg" alt="" />
-            <img src="assets/PTB-130.svg" alt="" />
-            <img src="assets/PTB-140.svg" alt="" />
-            <img src="assets/PTB-150.svg" alt="" />
-            <img src="assets/PTB-160.svg" alt="" />
-            <img src="assets/PTB-170.svg" alt="" />
-            <img src="assets/PTB-180.svg" alt="" />
-          </div>
-          <span class="Category_Name">Pulichino Tong Business Center</span>
+      > -->
+      <!-- ****************** Pulichino Tong Business Center ******************  -->
+      <div class="PTB">
+        <div class="PTB_1">
+          <img src="assets/PTB-222.svg" alt="" />
+          <img src="assets/PTB-224.svg" alt="" />
         </div>
-        <!-- ****************** Graduate & Professional Studies Center ****************** -->
-        <div class="GPS">
-          <div class="GPS_1">
-            <img src="assets/FAL-313.svg" alt="" />
-            <img src="assets/GPS-100.svg" alt="" />
-            <img src="assets/GPS-130.svg" alt="" />
-          </div>
-          <span class="Category_Name"
-            >Graduate & Professional
-            <div>Studies Center</div>
-          </span>
+        <div class="PTB_2">
+          <img src="assets/PTB-110.svg" alt="" />
+          <img src="assets/PTB-120.svg" alt="" />
+          <img src="assets/PTB-130.svg" alt="" />
+          <img src="assets/PTB-140.svg" alt="" />
+          <img src="assets/PTB-150.svg" alt="" />
+          <img src="assets/PTB-160.svg" alt="" />
+          <img src="assets/PTB-170.svg" alt="" />
+          <img src="assets/PTB-180.svg" alt="" />
         </div>
+        <span class="Category_Name">Pulichino Tong Business Center</span>
       </div>
+      <!-- ****************** Graduate & Professional Studies Center ****************** -->
+      <div class="GPS">
+        <div class="GPS_1">
+          <img src="assets/FAL-313.svg" alt="" />
+          <img src="assets/GPS-100.svg" alt="" />
+          <img src="assets/GPS-130.svg" alt="" />
+        </div>
+        <span class="Category_Name"
+          >Graduate & Professional
+          <div>Studies Center</div>
+        </span>
+      </div>
+      <!-- </div> -->
     </div>
   </body>
 </html>
