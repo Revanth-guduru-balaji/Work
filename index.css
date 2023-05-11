@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
   padding: 0px;
   display: flex;
-  max-width: 1500px;
+/*   max-width: 1500px; */
   justify-content: space-around;
   position: relative;
   align-items: baseline;
