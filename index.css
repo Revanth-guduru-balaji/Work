@@ -13,24 +13,35 @@ body {
   max-width: 1500px;
   justify-content: space-around;
   position: relative;
+  align-items: baseline;
 }
 h1 {
   margin: 0;
   padding: 0;
 }
+button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px;
+  font-size: large;
+  font-weight: bolder;
+}
 .container_1 {
   width: 45vw;
-  height: 100vh;
   padding: 40px;
-  display: grid;
-  justify-content: end;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
 }
 .container_2 {
-  width: 55vw;
+  width: 80vw;
   height: 100vh;
   padding-right: 30px;
-  display: grid;
-  justify-content: start;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4%;
+  align-items: flex-end;
 }
 .Title {
   font-size: 28px;
@@ -284,4 +295,12 @@ h1 {
   align-items: flex-end;
   gap: 5px;
   height: 60px;
+}
+@media screen and (max-width: 1300px) {
+  body {
+    flex-wrap: wrap;
+  }
+  .container_1 {
+    width: 620px;
+  }
 }
