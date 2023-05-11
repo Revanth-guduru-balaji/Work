@@ -17,7 +17,7 @@
         </div>
         <div><button onclick="onCloseLayout(true)">&#10006;</button></div>
       </div>
-      <img src="assets/Layout.PNG" alt="" />
+      <img class="triggerModal" src="assets/Layout.PNG" alt="" />
     </div>
     <button
       id="openLayout"
@@ -28,7 +28,7 @@
     </button>
     <div class="container_2">
       <!-- ****************** Olsen Hall ******************  -->
-      <div class="OLS">
+      <div class="OLS triggerModal">
         <div class="OLS_1">
           <img src="assets/OLS-401.svg" alt="" />
           <img src="assets/OLS-402.svg" alt="" />
@@ -78,7 +78,7 @@
       </div>
       <!-- <div class="BPO"> -->
       <!-- ****************** Ball Hall ******************  -->
-      <div class="BAL">
+      <div class="BAL triggerModal">
         <div class="BAL_1">
           <img src="assets/BAL-313.svg" />
           <img src="assets/BAL-314.svg" />
@@ -95,7 +95,7 @@
         <span class="Category_Name">Ball Hall</span>
       </div>
       <!-- ****************** Perry Hall ******************  -->
-      <div class="PER">
+      <div class="PER triggerModal">
         <div class="PER_1">
           <img src="assets/PER-107.svg" alt="" />
           <img src="assets/PER-109.svg" alt="" />
@@ -104,7 +104,7 @@
         <span class="Category_Name">Perry Hall</span>
       </div>
       <!-- ****************** Olney Hall ******************  -->
-      <div class="OLN">
+      <div class="OLN triggerModal">
         <div class="OLN_1">
           <img src="assets/OLN-517.svg" alt="" />
           <img src="assets/OLN-518.svg" alt="" />
@@ -125,7 +125,7 @@
       <!-- </div> -->
       <!-- <div class="SF"> -->
       <!-- ****************** Shah Hall ******************  -->
-      <div class="SHA">
+      <div class="SHA triggerModal">
         <div class="SHA_1">
           <img src="assets/SHA-301.svg" alt="" />
           <img src="assets/SHA-302.svg" alt="" />
@@ -143,7 +143,7 @@
       </div>
 
       <!-- ****************** Falmouth Hall ******************  -->
-      <div class="FAL">
+      <div class="FAL triggerModal">
         <div class="FAL_1">
           <img src="assets/FAL-209.svg" />
           <img src="assets/FAL-309.svg" />
@@ -154,7 +154,7 @@
       <!-- </div> -->
       <!-- ****************** Southwick Hall ******************  -->
       <!-- <div class="SD"> -->
-      <div class="SOU">
+      <div class="SOU triggerModal">
         <div class="SOU_1">
           <div
             style="
@@ -189,7 +189,7 @@
         <span class="Category_Name">Southwick Hall</span>
       </div>
       <!-- ****************** Dandeneau Hall ******************  -->
-      <div class="DAN">
+      <div class="DAN triggerModal">
         <div class="DAN_Name">
           <div class="Category_Name">Dandeneau</div>
           <div class="Category_Name">Hall</div>
@@ -204,7 +204,7 @@
        class="PG"
       > -->
       <!-- ****************** Pulichino Tong Business Center ******************  -->
-      <div class="PTB">
+      <div class="PTB triggerModal">
         <div class="PTB_1">
           <img src="assets/PTB-222.svg" alt="" />
           <img src="assets/PTB-224.svg" alt="" />
@@ -222,7 +222,7 @@
         <span class="Category_Name">Pulichino Tong Business Center</span>
       </div>
       <!-- ****************** Graduate & Professional Studies Center ****************** -->
-      <div class="GPS">
+      <div class="GPS triggerModal">
         <div class="GPS_1">
           <img src="assets/FAL-313.svg" alt="" />
           <img src="assets/GPS-100.svg" alt="" />
@@ -235,5 +235,14 @@
       </div>
       <!-- </div> -->
     </div>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-content">
+        <button class="close-button">&times;</button>
+        <div class="contents"></div>
+      </div>
+    </div>
+  
   </body>
 </html>
