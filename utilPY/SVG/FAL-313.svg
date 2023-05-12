@@ -1,27 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><!-- UML utilization SVG-->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100 " style="enable-background:new 0 0 1366 768;" xml:space="preserve">
-<style type="text/css">
-.bAVGkey600 {fill: #59baed;}
-.bAVGkey450 {fill:#a0ccef;}
-.bAVGkey300 {fill: #f7eec3;}
-.bAVGkey150 {fill: #eda29f;}
-.bAVGkeylow {fill: #ec7e79;}
-.DRY5 {fill: #59baed;stroke:#000000;stroke-miterlimit:10;stroke-width:2}
-.DRY4 {fill:#a0ccef;stroke:#000000;stroke-miterlimit:10;stroke-width:2}
-.DRY3 {fill: #f7eec3;stroke:#000000;stroke-miterlimit:10;stroke-width:2}
-.DRY2 {fill: #eda29f;stroke:#000000;stroke-miterlimit:10;stroke-width:2}
-.DRY1 {fill: #ec7e79;stroke:#000000;stroke-miterlimit:10;stroke-width:2}
-.st0{fill:#59baed;}
-.st1{text-align:center; font-family:'Frutiger';}
-.st2{font-size:9px;text-anchor:middle}
-.st3{font-weight:bold;}
-.st4{font-size:12px;text-anchor:middle}
-.st5{font-size:15px;text-anchor:middle}
-.st6{font-size:22px;text-anchor:middle}
-</style>
-<g id="FAL-313">
-<rect x="10" y="10" width="50.0" height="60.0" class="bAVGkeylow" />
-<text id="lbl_FAL-313" class="st1 st2" x="35.0" y="25" fill="black">FAL-313</text>
-<text id="util_FAL-313" class="st1 st4 st3" x="35.0" y="40" fill="black">.0</text>
-</g>
-</svg>
+<?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 27.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	        viewBox="0 0 792 612" style="enable-background:new 0 0 792 612;" xml:space="preserve">
+        <style type="text/css">
+                .st0{fill:#ec7e79;}
+                .st1{fill:none;}
+                .st2{font-family:'FrutigerLTStd-Bold';}
+                .st3{font-size:5.3427px;}
+                .st4{font-family:'FrutigerLTStd-Roman';}
+                .st5{font-size:4.1098px;}
+                
+            </style>
+            
+                            
+                    <rect x="132.64" y="71.04" class="st0" width="23.08" height="29.29"/>
+                    <rect x="132.64" y="88.35" class="st1" width="23.08" height="10.11"/>
+                    <text transform="matrix(1 0 0 1 137.4985 92.3594)"><tspan x="0" y="0" class="st2 st3">.0</tspan><tspan x="-1.19" y="4.93" class="st4 st5">FAL-313</tspan></text>
+                </svg>

@@ -1,61 +1,133 @@
 
 import os
-def output_svg(theRooms, labCat):
-    northCR = {}
-    southCR = {}
-    northCL = {}
-    southCL = {}
+
+def svgRoomOut(r,rmName, labCat):
+    directory = "SVG"
     
-    for r in theRooms:
-        currRoom = theRooms[r]
-        if currRoom == "PHYS_LABS":
-            currBldg = "OLN"
-            currFlr = "OLN-1"
+    
+    oStr = """
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 27.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	        viewBox="0 0 792 612" style="enable-background:new 0 0 792 612;" xml:space="preserve">
+        """
+    
+    # Start group of all rooms
+    #oStr += "<g id=\"classrooms\">\n"
+    #oStr += oStr2
+    currUse = r["USE"]
+    currCampus = r["CAMPUS"]
+    validCampuses = ["UMLNORTH","UMLSOUTH","UMLEAST"]
+    if currCampus in validCampuses:
+        if  currUse == "CLASSROOM":
+            #ofile = open( (oDir + currCampus + "\\" + currUse + "\\" + rmName + ".svg"),"w")
+            oStr += makeSVGroom2(r,rmName)
+            oStr += "</svg>\n"
+            oStr = oStr.strip()
+            filepath = directory+"/"+  rmName + ".svg"
+            # Create the directory if it does not exist
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+            # Write to the file
+            with open(filepath, "w") as f:
+                f.write(oStr)
+
+        elif currUse  == "CLASS LABORATORY":
+            
+            filepath = directory+"/"+ rmName + ".svg"
+            # Create the directory if it does not exist
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+           
+            print(rmName)
+            try:
+                currCat = labCat[rmName]["LAB_MAJOR_CATEGORY"]
+                print("OKOKOKOK", currCat)
+            except:
+                currCat = "STEM"
+            oStr2,ignoreX, ignoreY = makeSVGlab(rmName, r["RM_HRS"],currCat,0,0)
+            oStr += oStr2 + "</svg>\n"
+             # Write to the file
+            oStr = oStr.strip()
+            print(filepath)
+            with open(filepath, "w") as f:
+                f.write(oStr)
+def makeSVGroom2(r,rmName):
+    bAvg = r["BAvg"]
+    numSeats = r["PHYS_CAP"]
+
+    
+    xpos = 10
+    ypos = 10
+    
+    txtOffX = 18
+    txtOffY = 15
+    
+    lblUtil =  str(bAvg)
+    if lblUtil[0] == "0":
+        lblUtil = lblUtil[1:5]
+    else:
+        lblUtil = lblUtil[:5]
+
+    color = bAvgCat(bAvg)
+    retVal = rmSize(numSeats,rmName,lblUtil,color)
+    return(retVal)
+
+def rmHrCat(rmHrs, rmCat):
+    retVal = ""
+    util = float(rmHrs)/40.
+    if rmCat == "STEM":
+        if util > .75:
+            #retVal = "STEM5"
+            retVal = "#59baed"
+        elif util > .50:
+            #retVal = "STEM4"
+            retVal = "#a0ccef"
+        elif util > .33:
+            #retVal = "STEM3"
+            #retVal = "bAVGkey150"
+            retVal = "#f7eec3"
+        elif util > .16:
+            #retVal = "STEM3"
+            retVal ="#eda29f"
         else:
-            currBldg = r[:3]
-            currFlr = r[:5]
-        if currRoom["CAMPUS"] == "UMLNORTH":
-            if currRoom["USE"] == "CLASSROOM":
-                if currBldg not in northCR:
-                    northCR[currBldg] = {currFlr:{"rooms":{r:currRoom}}}
-                else:
-                    if currFlr not in northCR[currBldg]:
-                        northCR[currBldg][currFlr] = {"rooms":{r:currRoom}}
-                    else:
-                        northCR[currBldg][currFlr]["rooms"][r] = currRoom
-            elif currRoom["USE"] == "CLASS LABORATORY":
-                #PHYS_LABS: ???? Don't add to this dictionary
-                if currBldg not in northCL:
-                    northCL[currBldg] = {currFlr:{"rooms":{r:currRoom}}}
-                else:
-                    if currFlr not in northCL[currBldg]:
-                        northCL[currBldg][currFlr] = {"rooms":{r:currRoom}}
-                    else:
-                        northCL[currBldg][currFlr]["rooms"][r] = currRoom
-                        
-        elif currRoom["CAMPUS"] == "UMLSOUTH":
-            if currRoom["USE"] == "CLASSROOM":
-                if currBldg not in southCR:
-                    print(currBldg)
-                    southCR[currBldg] = {currFlr:{"rooms":{r:currRoom}}}
-                else:
-                    if currFlr not in southCR[currBldg]:
-                        southCR[currBldg][currFlr] = {"rooms":{r:currRoom}}
-                    else:
-                        southCR[currBldg][currFlr]["rooms"][r] = currRoom
-            elif currRoom["USE"] == "CLASS LABORATORY":
-                if currBldg not in southCL:
-                    southCL[currBldg] = {currFlr:{"rooms":{r:currRoom}}}
-                else:
-                    if currFlr not in southCL[currBldg]:
-                        southCL[currBldg][currFlr] = {"rooms":{r:currRoom}}
-                    else:
-                        southCL[currBldg][currFlr]["rooms"][r] = currRoom
-    svgClassroomOut(northCR, "North", 0)
-    svgClassroomOut(southCR, "South", 0)
-   
+            #retVal = "STEM1"
+            retVal = "#ec7e79"
+    elif rmCat == "Dry":
+        if util > .82:
+            retVal = "#59baed"
+        elif util > .67:
+            retVal = "#a0ccef"
+        elif util > .50:
+            #retVal = "DRY2"
+            retVal = "#f7eec3"
+        elif util > .33:
+            #retVal = "DRY2"
+            retVal = "#eda29f"
+        else:
+            retVal = "#ec7e79"
+    else:
+        print("error: check lab major category")
+    return retVal
 
-
+def makeSVGlab(rmName, rmHrs, labType, xpos, ypos):
+    txtOffX = 18
+    txtOffY = 30
+    #retVal = "<g id=\"" + rmName + "\" onclick=\"loadPhotoplan(&quot;SOU&quot;);\">\n"
+    #bCat = bAvgCat(bAvg)
+    #print rmName, labType
+    color = rmHrCat(rmHrs, labType)
+    currUtil = float(rmHrs)/40.
+    utilStr = "{:.1%}".format(currUtil)
+    #class="st1 st2
+    #    sizeW,sizeH = rmSize(numSeats)
+    sizeW = 100.
+    sizeH = 100.
+    # need to adjust ypos based on sizeH so the line up at the bottom
+    ypos += (120 - sizeH) # 120 is hard coded -it's the height of medium and large rooms. need variable
+ 
+    retVal = rmSize(30,rmName,utilStr,color)
+    return(retVal,sizeW, sizeH)
 
 def svgClassroomOut(campus, campusName, baseX):
     """
@@ -129,7 +201,8 @@ def makeSVGroom(rmName, bAvg, numSeats, xpos, ypos):
         lblUtil = lblUtil[:5]
 
     #class="st1 st2
-    retVal = rmSize(numSeats,rmName,lblUtil,bAvg)
+    color = get_color(bAvg)
+    retVal = rmSize(numSeats,rmName,lblUtil,color)
    
     return(retVal)
         
@@ -138,19 +211,18 @@ def bAvgCat(util):
     retVal = ""
     util = float(util)
     if util > .600:
-        retVal = "bAVGkey600" #59baed
+        retVal = "#59baed" 
     elif util > .450:
-        retVal = "bAVGkey450" #a0ccef
+        retVal = "#a0ccef" 
     elif util > .300: 
-        retVal = "bAVGkey300" #f7eec3
+        retVal = "#f7eec3" 
     elif util > .150:
-        retVal = "bAVGkey150" #eda29f
+        retVal = "#eda29f" 
     else:
-        retVal = "bAVGkeylow" #ec7e79
+        retVal = "#ec7e79" 
     return retVal
 
-
-def rmSize(seats,rmName,lblUtil,util):
+def get_color(util):
     color = ''
     util = float(util)
     if util > .600:
@@ -162,7 +234,11 @@ def rmSize(seats,rmName,lblUtil,util):
     elif util > .150:
         color = "#eda29f" 
     else:
-        color = "#ec7e79" 
+        color = "#ec7e79"
+    return color
+
+def rmSize(seats,rmName,lblUtil,color):
+    
     fillcolor = ".st0{fill:"+color+";}"
     styles = """.st1{fill:none;}
                 .st2{font-family:'FrutigerLTStd-Bold';}

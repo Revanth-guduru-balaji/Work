@@ -6,7 +6,7 @@ import json
 import CURR_utilLib as uLib
 import CURR_pyodbcLib as p
 #import CURR_schedDetail as schedDet
-import CURR_svg as svgOut
+import svg as svgOut
 import CURR_utilHTML as uHTML
 
 def outputUtilbyRoom(theRooms):
@@ -220,7 +220,7 @@ ofile.write(utilCSV)
 ofile.close()
 
 
-svgOut.output_svg(theRooms, labCat)
+#svgOut.output_svg(theRooms, labCat)
 for r in theRooms:
     #print theRooms[r]
     svgOut.svgRoomOut(theRooms[r],r, labCat)
