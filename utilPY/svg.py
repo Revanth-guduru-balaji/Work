@@ -5,12 +5,7 @@ def svgRoomOut(r,rmName, labCat):
     directory = "SVG"
     
     
-    oStr = """
-            <?xml version="1.0" encoding="utf-8"?>
-            <!-- Generator: Adobe Illustrator 27.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	        viewBox="0 0 792 612" style="enable-background:new 0 0 792 612;" xml:space="preserve">
-        """
+   
     
     # Start group of all rooms
     #oStr += "<g id=\"classrooms\">\n"
@@ -21,8 +16,8 @@ def svgRoomOut(r,rmName, labCat):
     if currCampus in validCampuses:
         if  currUse == "CLASSROOM":
             #ofile = open( (oDir + currCampus + "\\" + currUse + "\\" + rmName + ".svg"),"w")
-            oStr += makeSVGroom2(r,rmName)
-            oStr += "</svg>\n"
+            oStr = makeSVGroom2(r,rmName)
+          
             oStr = oStr.strip()
             filepath = directory+"/"+  rmName + ".svg"
             # Create the directory if it does not exist
@@ -46,7 +41,7 @@ def svgRoomOut(r,rmName, labCat):
             except:
                 currCat = "STEM"
             oStr2,ignoreX, ignoreY = makeSVGlab(rmName, r["RM_HRS"],currCat,0,0)
-            oStr += oStr2 + "</svg>\n"
+            oStr = oStr2 
              # Write to the file
             oStr = oStr.strip()
             print(filepath)
@@ -170,13 +165,9 @@ def svgClassroomOut(campus, campusName, baseX):
             print("********************** done with floor, increment Y", currY)
                     
 
-    oStr = """
-                <?xml version="1.0" encoding="utf-8"?>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 792 612" style="enable-background:new 0 0 792 612;" xml:space="preserve">
-         """
-    oStr += oStr2
-    oStr += "</svg>\n"
+    
+    oStr = oStr2
+    
     # Define the directory and file path
     directory = "2021F_Util"
     filepath = directory+"/"+campusName + "_test.svg"
@@ -239,18 +230,7 @@ def get_color(util):
 
 def rmSize(seats,rmName,lblUtil,color):
     
-    fillcolor = ".st0{fill:"+color+";}"
-    styles = """.st1{fill:none;}
-                .st2{font-family:'FrutigerLTStd-Bold';}
-                .st3{font-size:5.3427px;}
-                .st4{font-family:'FrutigerLTStd-Roman';}
-                .st5{font-size:4.1098px;}
-                """
-    style = f"""<style type="text/css">
-                {fillcolor}
-                {styles}
-            </style>
-            """
+   
     try:
         seats = float(seats)
     except:
@@ -258,41 +238,51 @@ def rmSize(seats,rmName,lblUtil,color):
     
     if seats>0 and seats<17:
         #small.svg
-        return style+f"""
-                <rect x="57.19" y="78.14" class="st0" width="23.08" height="22.19"/>
-                <rect x="57.19" y="88.35" class="st1" width="23.08" height="10.11"/>
-                <text transform="matrix(1 0 0 1 62.0435 92.3594)"><tspan x="0" y="0" class="st2 st3">{lblUtil}</tspan><tspan x="-1.19" y="4.93" class="st4 st5">{rmName}</tspan></text>
+        return f"""
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <rect fill="{color}" width="60" height="60" />
+                    <text x="26" y="30" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{lblUtil}</text>
+                    <text x="26" y="55" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
+                </svg>
                 """
     elif seats>17 and seats<34:
         #polygon.svg
-        return style+f"""
-                <polygon class="st0" points="88.11,71.21 82.13,78.27 82.34,100.33 105.42,100.33 105.42,78.27 99.65,71.21 "/>
-                <rect x="82.24" y="88.35" class="st1" width="23.08" height="10.11"/>
-                <text transform="matrix(1 0 0 1 87.0923 92.3594)"><tspan x="0" y="0" class="st2 st3">{lblUtil}</tspan><tspan x="-1.19" y="4.93" class="st4 st5">{rmName}</tspan></text>
+        return f"""
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="50" viewBox="0 0 60 50" fill="none">
+                <!-- Hexagon above the square -->
+                    <polygon points="1,50 60,50 60,20 45,0 15,0 1,20" fill="{color}" stroke="{color}" />
+                    <text x="30" y="30" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{lblUtil}</text>
+                    <text x="30" y="45" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
+                </svg>
                 """
     elif seats>34 and seats<50:
         #circle.svg for mdeium
-        return style+f"""
-                        
-                <path class="st0" d="M107.55,79.62l-0.06,20.71h23.08V79.62c0,0-1.24-8.58-11.54-8.58S107.55,79.62,107.55,79.62z"/> 
-                <rect x="107.49" y="88.35" class="st1" width="23.08" height="10.11"/>
-                <text transform="matrix(1 0 0 1 112.3467 92.3594)"><tspan x="0" y="0" class="st2 st3">{lblUtil}</tspan><tspan x="-1.19" y="4.93" class="st4 st5">{rmName}</tspan></text> 
-                """
+        return f""" 
+              <svg xmlns="http://www.w3.org/2000/svg" width="62" height="60" viewBox="0 0 62 60" fill="none">
+                <rect x="0" y="32" width="62" height="32" fill="{color}" />
+                <ellipse cx="31" cy="32" rx="31" ry="31" fill="{color}" />
+                <text x="31" y="44" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{lblUtil}</text>
+                <text x="31" y="58" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
+              </svg>
+              """
     elif seats>50 and seats<76:
         #large.svg for  large
-        return style+f"""
-                            
-                    <rect x="132.64" y="71.04" class="st0" width="23.08" height="29.29"/>
-                    <rect x="132.64" y="88.35" class="st1" width="23.08" height="10.11"/>
-                    <text transform="matrix(1 0 0 1 137.4985 92.3594)"><tspan x="0" y="0" class="st2 st3">{lblUtil}</tspan><tspan x="-1.19" y="4.93" class="st4 st5">{rmName}</tspan></text>
+        return f"""
+                <svg xmlns="http://www.w3.org/2000/svg" width="72" height="60" viewBox="0 0 72 60" fill="none">
+                    <rect fill="{color}" width="72" height="60" />
+                    <text x="36" y="30" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{lblUtil}</text>
+                    <text x="36" y="55" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
+                </svg>
                 """
         
     else:
         #lecture.svg for lecture
-        return style+f"""
-                <rect x="157.79" y="71.04" class="st0" width="36.25" height="29.29"/>
-                <rect x="157.79" y="88.35" class="st1" width="36.25" height="10.11"/>
-                <text transform="matrix(1 0 0 1 169.2339 92.3594)"><tspan x="0" y="0" class="st2 st3">{lblUtil}</tspan><tspan x="-1.19" y="4.93" class="st4 st5">{rmName}</tspan></text>
+        return f"""
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="60" viewBox="0 0 100 60" fill="none">
+                    <rect fill="{color}" width="100" height="60" />
+                    <text x="50" y="30" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{lblUtil}</text>
+                    <text x="50" y="55" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
+                </svg>
                 """
    
 

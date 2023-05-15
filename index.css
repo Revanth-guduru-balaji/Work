@@ -160,7 +160,7 @@ button:hover {
 }
 .PER_1 {
   display: grid;
-  grid-template-columns: repeat(3, 50px);
+  grid-template-columns: repeat(3, 70px);
   gap: 5px;
   align-items: flex-end;
 }
