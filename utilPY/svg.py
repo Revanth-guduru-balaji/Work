@@ -241,7 +241,7 @@ def rmSize(seats,rmName,lblUtil,color):
         return f"""
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
                     <rect fill="{color}" width="60" height="60" />
-                    <text x="26" y="30" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{lblUtil}</text>
+                    <text x="26" y="40" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{lblUtil}</text>
                     <text x="26" y="55" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
                 </svg>
                 """
