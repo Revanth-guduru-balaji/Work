@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css" />
+    <script src="./test.js" defer></script>
+  </head>
+  <body>
+    <div class="container_1">
+      <div style="display: flex; justify-content: space-between">
+        <div class="Title">
+          <b>Spring 2023</b> North Campus <br />
+          Classroom Utilization
+        </div>
+        <div><button onclick="onCloseLayout(true)">&#10006;</button></div>
+      </div>
+      <img class="triggerModal" src="assets/Layout.PNG" alt="" />
+    </div>
+    <button
+      id="openLayout"
+      style="display: none"
+      onclick="onCloseLayout(false)"
+    >
+      LayOut &#8250;
+    </button>
+    <div class="container_2">
+      <!-- ****************** Olsen Hall ******************  -->
+      <div class="OLS triggerModal">
+        <div class="OLS_1">
+          <img src="utilPY/SVG/OLS-501.svg" alt="" />
+          <img src="utilPY/SVG/OLS-502.svg" alt="" />
+          <img src="utilPY/SVG/OLS-509.svg" alt="" />
+        </div>
+        <span class="Category_Name">Olsen Hall</span>
+      </div>
+      <!-- <div class="BPO"> -->
+      <!-- ****************** Ball Hall ******************  -->
+      <div class="BAL triggerModal">
+        <div class="BAL_1">
+          <img src="utilPY/SVG/BAL-314.svg" />
+          <img src="utilPY/SVG/BAL-326.svg" />
+          <img src="utilPY/SVG/BAL-328.svg" />
+        </div>
+        <div class="BAL_2">
+          <img src="utilPY/SVG/BAL-416B.svg" />
+          <img src="utilPY/SVG/BAL-416C.svg" />
+          <img src="utilPY/SVG/BAL-424.svg" />
+        </div>
+        <span class="Category_Name">Ball Hall</span>
+      </div>
+      <!-- ****************** Perry Hall ******************  -->
+      <div class="PER triggerModal">
+        <div class="PER_1">
+          <img src="utilPY/SVG/PER-104.svg" alt="" />
+          <img src="utilPY/SVG/PER-109.svg" alt="" />
+          <img src="utilPY/SVG/PER-111.svg" alt="" />
+        </div>
+        <span class="Category_Name">Perry Hall</span>
+      </div>
+      <!-- ****************** Olney Hall ******************  -->
+      <div class="OLN triggerModal">
+        <div class="OLN_1">
+            <img src="utilPY/SVG/OLN-517.svg" alt="" />
+            <img src="utilPY/SVG/OLN-519.svg" alt="" /> 
+        </div>
+        <div class="OLN_2">
+          <img src="utilPY/SVG/OLN-308.svg" alt="" />
+          <img src="utilPY/SVG/OLN-316.svg" alt="" /> 
+        </div>
+        <div class="OLN_3">
+          <img src="utilPY/SVG/OLN-204.svg" alt="" />
+          <img src="utilPY/SVG/OLN-209.svg" alt="" />
+          <img src="utilPY/SVG/OLN-211.svg" alt="" />
+          <img src="utilPY/SVG/OLN-212.svg" alt="" />
+          <img src="utilPY/SVG/OLN-218.svg" alt="" />
+        </div>
+        <div class="OLN_4">
+          <img src="utilPY/SVG/OLN-115.svg" alt="" />
+        </div>
+
+        <span class="Category_Name">Olney Hall</span>
+      </div>
+      <!-- </div> -->
+      <!-- <div class="SF"> -->
+      <!-- ****************** Shah Hall ******************  -->
+      <div class="SHA triggerModal">
+        <div class="SHA_1">
+          <img src="assets/SHA-301.svg" alt="" />
+          <img src="assets/SHA-302.svg" alt="" />
+          <img src="assets/SHA-303.svg" alt="" />
+          <img src="assets/SHA-304.svg" alt="" />
+          <img src="assets/SHA-305.svg" alt="" />
+          <img src="assets/SHA-306.svg" alt="" />
+          <img src="assets/SHA-308.svg" alt="" />
+          <img src="assets/SHA-310.svg" alt="" />
+        </div>
+        <div class="SHA_2">
+          <img src="assets/SHA-208.svg" alt="" />
+          <span class="Category_Name">Shah Hall</span>
+        </div>
+      </div>
+
+      <!-- ****************** Falmouth Hall ******************  -->
+      <div class="FAL triggerModal">
+        <div class="FAL_1">
+          <img src="assets/FAL-209.svg" />
+          <img src="assets/FAL-309.svg" />
+          <img src="assets/FAL-311.svg" />
+        </div>
+        <span class="Category_Name">Falmouth Hall</span>
+      </div>
+      <!-- </div> -->
+      <!-- ****************** Southwick Hall ******************  -->
+      <!-- <div class="SD"> -->
+      <div class="SOU triggerModal">
+        <div class="SOU_1">
+          <div
+            style="
+              position: absolute;
+              font-size: 9px;
+              font-weight: bold;
+              top: 0px;
+              text-indent: 50px;
+            "
+          >
+            COMPUTER LABS
+          </div>
+          <span
+            style="
+              display: grid;
+              grid-template-columns: repeat(3, 50px);
+              gap: 5px;
+              border: 1px dashed black;
+              padding: 0.5px;
+            "
+            ><img src="assets/SOU-121.svg" alt="" />
+            <img src="assets/SOU-302.svg" alt="" />
+            <img src="assets/SOU-309.svg" alt=""
+          /></span>
+          <img src="assets/SOU-313.svg" alt="" />
+          <img
+            src="assets/SOU-317.svg"
+            alt=""
+            style="border: 1px dashed black; padding: 0.5px"
+          />
+        </div>
+        <span class="Category_Name">Southwick Hall</span>
+      </div>
+      <!-- ****************** Dandeneau Hall ******************  -->
+      <div class="DAN triggerModal">
+        <div class="DAN_Name">
+          <div class="Category_Name">Dandeneau</div>
+          <div class="Category_Name">Hall</div>
+        </div>
+        <div class="DAN_1">
+          <img src="assets/DAN-321.svg" />
+          <img src="assets/DAN-220.svg" />
+        </div>
+      </div>
+      <!-- </div> -->
+      <!-- <div
+       class="PG"
+      > -->
+      <!-- ****************** Pulichino Tong Business Center ******************  -->
+      <div class="PTB triggerModal">
+        <div class="PTB_1">
+          <img src="assets/PTB-222.svg" alt="" />
+          <img src="assets/PTB-224.svg" alt="" />
+        </div>
+        <div class="PTB_2">
+          <img src="assets/PTB-110.svg" alt="" />
+          <img src="assets/PTB-120.svg" alt="" />
+          <img src="assets/PTB-130.svg" alt="" />
+          <img src="assets/PTB-140.svg" alt="" />
+          <img src="assets/PTB-150.svg" alt="" />
+          <img src="assets/PTB-160.svg" alt="" />
+          <img src="assets/PTB-170.svg" alt="" />
+          <img src="assets/PTB-180.svg" alt="" />
+        </div>
+        <span class="Category_Name">Pulichino Tong Business Center</span>
+      </div>
+      <!-- ****************** Graduate & Professional Studies Center ****************** -->
+      <div class="GPS triggerModal">
+        <div class="GPS_1">
+          <img src="assets/FAL-313.svg" alt="" />
+          <img src="assets/GPS-100.svg" alt="" />
+          <img src="assets/GPS-130.svg" alt="" />
+        </div>
+        <span class="Category_Name"
+          >Graduate & Professional
+          <div>Studies Center</div>
+        </span>
+      </div>
+      <!-- </div> -->
+    </div>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-content">
+        <button class="close-button">&times;</button>
+        <div class="contents"></div>
+      </div>
+    </div>
+  
+  </body>
+</html>

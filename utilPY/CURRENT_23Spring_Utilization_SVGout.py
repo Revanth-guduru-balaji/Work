@@ -38,7 +38,7 @@ with open('rmCapacities.json') as json_file:
 with open('SpInv.json') as json_file:
     SpInv = json.load(json_file)
 
-#SQLsched= p.get_SoC()
+# SQLsched= p.get_SoC()
 # SpInv = p.get_SpInv()
 # rmCaps = p.get_rmCapacities()
 # labCat = p.get_labCats()

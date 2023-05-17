@@ -248,11 +248,11 @@ def rmSize(seats,rmName,lblUtil,color):
     elif seats>17 and seats<34:
         #polygon.svg
         return f"""
-                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="50" viewBox="0 0 60 50" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
                 <!-- Hexagon above the square -->
-                    <polygon points="1,50 60,50 60,20 45,0 15,0 1,20" fill="{color}" stroke="{color}" />
-                    <text x="30" y="30" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{lblUtil}</text>
-                    <text x="30" y="45" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
+                    <polygon points="1,60 60,60 60,20 45,0 15,0 1,20" fill="{color}" stroke="{color}" />
+                    <text x="30" y="40" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{lblUtil}</text>
+                    <text x="30" y="55" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
                 </svg>
                 """
     elif seats>34 and seats<50:
@@ -261,8 +261,8 @@ def rmSize(seats,rmName,lblUtil,color):
               <svg xmlns="http://www.w3.org/2000/svg" width="62" height="60" viewBox="0 0 62 60" fill="none">
                 <rect x="0" y="32" width="62" height="32" fill="{color}" />
                 <ellipse cx="31" cy="32" rx="31" ry="31" fill="{color}" />
-                <text x="31" y="44" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{lblUtil}</text>
-                <text x="31" y="58" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
+                <text x="31" y="40" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{lblUtil}</text>
+                <text x="31" y="55" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
               </svg>
               """
     elif seats>50 and seats<76:
@@ -270,7 +270,7 @@ def rmSize(seats,rmName,lblUtil,color):
         return f"""
                 <svg xmlns="http://www.w3.org/2000/svg" width="72" height="60" viewBox="0 0 72 60" fill="none">
                     <rect fill="{color}" width="72" height="60" />
-                    <text x="36" y="30" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{lblUtil}</text>
+                    <text x="36" y="40" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{lblUtil}</text>
                     <text x="36" y="55" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
                 </svg>
                 """
@@ -280,7 +280,7 @@ def rmSize(seats,rmName,lblUtil,color):
         return f"""
                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="60" viewBox="0 0 100 60" fill="none">
                     <rect fill="{color}" width="100" height="60" />
-                    <text x="50" y="30" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{lblUtil}</text>
+                    <text x="50" y="40" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{lblUtil}</text>
                     <text x="50" y="55" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
                 </svg>
                 """

@@ -35,6 +35,8 @@ def get_SoC():
         SoC[i] = currRow
         i += 1
     print("pydobc sched rows: ", i)
+    
+   
     return(SoC)
 
 def get_SpInv():

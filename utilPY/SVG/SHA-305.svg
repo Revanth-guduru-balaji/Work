@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="72" height="60" viewBox="0 0 72 60" fill="none">
                     <rect fill="#ec7e79" width="72" height="60" />
-                    <text x="36" y="30" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">.0</text>
+                    <text x="36" y="40" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">.0</text>
                     <text x="36" y="55" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">SHA-305</text>
                 </svg>
