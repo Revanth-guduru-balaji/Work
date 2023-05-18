@@ -26,27 +26,27 @@ def svgRoomOut(r,rmName, labCat):
             # Write to the file
             with open(filepath, "w") as f:
                 f.write(oStr)
-
-        elif currUse  == "CLASS LABORATORY":
+# FOR LABS
+        # elif currUse  == "CLASS LABORATORY":
             
-            filepath = directory+"/"+ rmName + ".svg"
-            # Create the directory if it does not exist
-            if not os.path.exists(directory):
-                os.makedirs(directory)
+        #     filepath = directory+"/"+ rmName + ".svg"
+        #     # Create the directory if it does not exist
+        #     if not os.path.exists(directory):
+        #         os.makedirs(directory)
            
-            print(rmName)
-            try:
-                currCat = labCat[rmName]["LAB_MAJOR_CATEGORY"]
-                print("OKOKOKOK", currCat)
-            except:
-                currCat = "STEM"
-            oStr2,ignoreX, ignoreY = makeSVGlab(rmName, r["RM_HRS"],currCat,0,0)
-            oStr = oStr2 
-             # Write to the file
-            oStr = oStr.strip()
-            print(filepath)
-            with open(filepath, "w") as f:
-                f.write(oStr)
+        #     print(rmName)
+        #     try:
+        #         currCat = labCat[rmName]["LAB_MAJOR_CATEGORY"]
+        #         print("OKOKOKOK", currCat)
+        #     except:
+        #         currCat = "STEM"
+        #     oStr2,ignoreX, ignoreY = makeSVGlab(rmName, r["RM_HRS"],currCat,0,0)
+        #     oStr = oStr2 
+        #      # Write to the file
+        #     oStr = oStr.strip()
+        #     print(filepath)
+        #     with open(filepath, "w") as f:
+        #         f.write(oStr)
 def makeSVGroom2(r,rmName):
     bAvg = r["BAvg"]
     numSeats = r["PHYS_CAP"]
@@ -63,7 +63,6 @@ def makeSVGroom2(r,rmName):
         lblUtil = lblUtil[1:5]
     else:
         lblUtil = lblUtil[:5]
-
     color = bAvgCat(bAvg)
     retVal = rmSize(numSeats,rmName,lblUtil,color)
     return(retVal)
@@ -190,7 +189,6 @@ def makeSVGroom(rmName, bAvg, numSeats, xpos, ypos):
         lblUtil = lblUtil[1:5]
     else:
         lblUtil = lblUtil[:5]
-
     #class="st1 st2
     color = get_color(bAvg)
     retVal = rmSize(numSeats,rmName,lblUtil,color)
@@ -230,7 +228,7 @@ def get_color(util):
 
 def rmSize(seats,rmName,lblUtil,color):
     
-   
+    
     try:
         seats = float(seats)
     except:

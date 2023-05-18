@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="70" viewBox="0 0 60 70" fill="none">
                 <!-- Hexagon above the square -->
-                <polygon points="1,70 60,70 60,30 15,0 15,0 0,0" fill="#ec7e79" stroke="#ec7e79" />
-                <text x="30" y="50" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">.0</text>
+                <polygon points="1,70 60,70 60,30 15,0 15,0 0,0" fill="#f7eec3" stroke="#f7eec3" />
+                <text x="30" y="50" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">.309</text>
                 <text x="30" y="65" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">COB-140</text>
             </svg>

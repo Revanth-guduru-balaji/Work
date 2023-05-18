@@ -29,7 +29,7 @@ Sept 30 2021
 SoC key is now the row number from SQL/SoC - NO LONGER THE COURSE NUMBER, THAT IS NOT UNIQUE!!
 """
 
-with open('Soc.json') as json_file:
+with open('Fall.json') as json_file:
     SQLsched = json.load(json_file)
 with open('labCats.json') as json_file:
     labCat = json.load(json_file)
