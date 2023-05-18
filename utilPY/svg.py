@@ -2,7 +2,6 @@
 import os
 
 def svgRoomOut(r,rmName, labCat):
-    directory = "SVG"
     
     
    
@@ -19,6 +18,7 @@ def svgRoomOut(r,rmName, labCat):
             oStr = makeSVGroom2(r,rmName)
           
             oStr = oStr.strip()
+            directory = currCampus
             filepath = directory+"/"+  rmName + ".svg"
             # Create the directory if it does not exist
             if not os.path.exists(directory):

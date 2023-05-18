@@ -222,7 +222,6 @@ ofile.close()
 
 #svgOut.output_svg(theRooms, labCat)
 for r in theRooms:
-    #print theRooms[r]
     svgOut.svgRoomOut(theRooms[r],r, labCat)
 
 #print "*** Room Hours", theRooms["OLS-409"]["RM_HRS"]
