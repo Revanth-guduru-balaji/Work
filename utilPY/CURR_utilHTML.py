@@ -202,11 +202,13 @@ def writeHeaderCLASSROOM(roomID, rmUse, category, phys_cap, bAvg, rmHrs, WSCH):
         bAvg = 0.000
     """
     classStr = bAvgCategory(bAvg)
-    print(bAvg)
-    if bAvg[0] == "0":
-        bAvg = bAvg[1:5]
+    if len(bAvg.items()):
+        if bAvg[0] == "0":
+            bAvg = bAvg[1:5]
+        else:
+            bAvg = bAvg[:5]
     else:
-        bAvg = bAvg[:5]
+        bAvg = str(0.000)
     #print "!!!!!", bAvg, roomID
     toks = roomID.split("-")
     oStr = "<HTML><HEAD><title>" + roomID + "</title>"
