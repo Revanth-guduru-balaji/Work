@@ -73,6 +73,7 @@ LAYOUT =  f"""
 """
 BODY_OPENING = f""" 
     <h3 class="text-center"><b>FALL 2022 -</b> North Campus Classroom Utilization</h3>
+    <h6 class="text-center"><div id="timestamp1"> </div></h6>
     <div >
         <div class="row ">
             {LAYOUT}
@@ -89,6 +90,12 @@ BODY_CLOSING = """
 
 """
 CLOSING  = """
+  <script>
+    let timestamp1 = document.getElementById("timestamp1");
+    let timestamp = Date.now();
+    var d = new Date(timestamp);
+    timestamp1.innerHTML = d;
+ </script>
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
