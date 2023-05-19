@@ -5,7 +5,7 @@ from datetime import datetime
 import json
 import CURR_utilLib as uLib
 import CURR_pyodbcLib as p
-#import CURR_schedDetail as schedDet
+import CURR_schedDetail as schedDet
 import svg as svgOut
 import CURR_utilHTML as uHTML
 
@@ -29,7 +29,7 @@ Sept 30 2021
 SoC key is now the row number from SQL/SoC - NO LONGER THE COURSE NUMBER, THAT IS NOT UNIQUE!!
 """
 
-with open('Fall.json') as json_file:
+with open('Soc.json') as json_file:
     SQLsched = json.load(json_file)
 with open('labCats.json') as json_file:
     labCat = json.load(json_file)
@@ -255,7 +255,7 @@ print("SpInv util:", (rawWSCH/(40*spInvSeats)))
 print("Overall Fall 2023 Utilization:", (rawWSCH/(40*spInvSeats)))
 
 #uHTML.make_schedDetail_1room("PTB-150", theRooms, SoC, spInvRooms)
-uHTML.make_schedDetail(theRooms, SoC, spInvRooms)
+schedDet.make_schedDetail(theRooms, SoC, spInvRooms)
 
 """
                 count what needs to counted!"print "****", r, d, i

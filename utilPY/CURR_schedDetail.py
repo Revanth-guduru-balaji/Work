@@ -5,7 +5,13 @@ from openpyxl.worksheet.datavalidation import DataValidation
 import collections, operator
 from collections import defaultdict
 from datetime import datetime
+import os
 
+def tstamper():
+    now = datetime.now()
+    tstamp = str(now.year) + str(now.month) + str(now.day) + "_"
+    tstamp += str(now.hour) + str(now.minute) + str(now.second)
+    return(tstamp)
 def build_startTimes():
     startTimes = []
 
@@ -82,14 +88,29 @@ def make_schedDetail(theRooms, SoC, spInvRooms):
     days = ("M","T","W","R","F")
     startTimes2 = build_startTimes()
     for r in theRooms:
-        ofile = open("C:\\temp\\t\\" + r + "_schedDetail.html","w")
+         # Define the directory and file path
+        directory = "HTML"
+        filepath = directory+"/"+ r + "_schedDetail.html"
+
+        # Create the directory if it does not exist
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+
+              
+        
         try:
             rmUse = theRooms[r]["USE"]
         except:
             rmUse = "OTHER/NON-ROOM"
-            # (roomID, rmUse,rmHrs, WSCH):
-        ofile.write(writeHeader(r, "TBD", theRooms[r]["RM_HRS"], theRooms[r]["WSCH"]))
-        ofile.write(writeBody(startTimes2, days, theRooms, r))
-        ofile.write(writeFooter())
-        ofile.close()
+            #writeHeader(roomID, rmUse, category, phys_cap,bAvg, rmHrs, WSCH):
+        # Write to the file
+        roomID = r
+        rmHrs = theRooms[r]["RM_HRS"]
+        WSCH = theRooms[r]["WSCH"]
+        with open(filepath, "w") as f:
+            f.write(writeHeader(roomID,rmUse ,rmHrs,WSCH))  
+            tstamp = tstamper()
+            f.write(writeBody(startTimes2, days, theRooms,r))
+            f.write(writeFooter())
+            f.close()
 
