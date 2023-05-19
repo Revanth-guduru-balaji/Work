@@ -38,8 +38,7 @@ def writeHeader(roomID, rmUse,rmHrs, WSCH):
     oStr += "<h4>" + rmUse + "</h4>\n"
     return oStr
 
-
-def writeBody(startTimes, days, theRooms, r):
+def writeBody(startTimes, days, roomData, phys_cap, tstamp):
     #2 rows at top: day, then the 2 fields we display:course name,enrollment
     #if theRooms[r][d][s][0] != 0:
     #oStr += theRooms[r][d][s][0] + "\t" + str(theRooms[r][d][s][1])
@@ -54,30 +53,40 @@ def writeBody(startTimes, days, theRooms, r):
     for f in fulldays:
         oStr += "<th>Course Name</th><th>Enrolled</th>"
     oStr += "</tr>\n"
-    #Now data
+    #Now data - adding SUR category
+    # how do we do time slots (i) vs startTimes
+    j = 0
     for s in startTimes:
         oStr += "<tr><td class='time'>" + s + "</td>"
         for d in days:
-            if d != "S" and d != "U":
-                """
-                print "in", r, d, i, theRooms[r]["RM_HRS"], theRooms[r][d][i]["COURSES"]
-                FIX WHAT DATA WE PASS IN - PASS IN WHOLE theRooms and specific room
-                """
-                """
-                if len(theRooms[r][d][s]["COURSES"]) > 0:
-                    # s may be formatted but we need i, slot number
-                    oStr += "<td colspan='2' class='filled'>" + theRooms[r][d][s]["COURSES"]
-                    oStr += ":     " + str(roomData[d][s][1]) + "</td>"
+            if d != "S":
+                if len(roomData[d][j]["COURSES"])> 0:
+                    oStr += "<td colspan='2' class='filled'>" + str(roomData[d][j]["COURSES"][0])
+                    # this is course ID but we need name and enrollment - need to lookup)
+                    #print "?????????",phys_cap
+                    if (phys_cap == "NA" or phys_cap == "#N/A"):
+                        SURcat = "NA"
+                    elif (phys_cap > 0):
+                        #print ":::", roomData[d][s][1],phys_cap
+                        #FIX THIS 11/20/2021 SURcat = SURcategory(float(float(roomData[d][s][1]))/float(phys_cap))
+                        SURcat = "SUR33"
+                    else:
+                        SURcat = "filled"
+                    # FIX THIS 11/20/2021
+                    #oStr += "<td colspan='2' class='" + SURcat + "'>" + roomData[d][s][0]
+                    #oStr += ":     " + str(roomData[d][s][1]) + "</td>"
+                    oStr += "<td colspan='2' class='" + SURcat + "'>" + "FIX THIS"
+                    oStr += ":     " + "FIX THIS" + "</td>"
                 else:
                     oStr += "<td colspan='2' class='empty'>  </td>"
-                """
-                oStr += "<td colspan='2' class='filled'>TBD</td><td colspan='2' class='empty'>  </td>"
-                """
-                oStr += "<td colspan='2' class='empty'>  </td>"
-                """
         oStr += "</tr>\n"
+        j += 6
+        if j > 180:
+            j = 180
+        
     
-    oStr += "</table>\n"   
+    oStr += "</table>\n"
+    oStr += "<h6>Last updated:" + tstamp + "<h6>\n"
     return oStr
 
 def writeFooter():
@@ -110,7 +119,7 @@ def make_schedDetail(theRooms, SoC, spInvRooms):
         with open(filepath, "w") as f:
             f.write(writeHeader(roomID,rmUse ,rmHrs,WSCH))  
             tstamp = tstamper()
-            f.write(writeBody(startTimes2, days, theRooms,r))
+            f.write(writeBody(startTimes2, days, theRooms[r], 20,tstamp))
             f.write(writeFooter())
             f.close()
 

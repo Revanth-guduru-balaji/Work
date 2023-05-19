@@ -11,7 +11,9 @@ halls = {
     "FAL":"Falmouth Hall",
     "OLN":"Olney Hall",
     "OLS":"Olsen Hall",
-    "PTB":"Pulichino Tong Business Center"}
+    "PTB":"Pulichino Tong Business Center"
+    }
+
 HEAD = """
     <!doctype html>
     <html lang="en">
@@ -48,26 +50,6 @@ HEAD = """
     </style>
   </head>
   <body>
-"""
-ROW_ITEM = """ 
-    <div class="row align-items-end ">
-
-     </div>
-"""
-COL_ITEM = """
-    <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
-    
-    </div>
-"""
-ITEM_TITLE = """
-    <h5 >Olsen Hall</h5>  
-"""
-GRID_ITEM  = """
-    <div  class="grid-item d-flex align-items-end ">
-            <div class="container">
-       
-            </div>
-    </div>
 """
 LAYOUT =  f"""
     <div class="col-sm-4 Imagecontainer">
@@ -171,9 +153,10 @@ def build(campus,build_dict):
             items=""
             for j in i:
                 path = campus+"/"+build +"-"+str(j)+".svg"
+                anchor_path = "HTML"+"/"+build +"-"+str(j)+"_schedDetail.html"
                 items += f"""
                     <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
-                        <img src="{path}" alt="" />
+                        <a href="{anchor_path}"><img src="{path}" alt="" /></a>
                     </div>
                     """
             rows+= f"""
@@ -206,7 +189,6 @@ for i in ["UMLNORTH"]: # need to pass ,"UMLSOUTH","UMLEAST"
     prettyHTML = soup.prettify()
     with open(page, "w",encoding="utf-8") as f:
         f.write(prettyHTML)  
-        
         f.close()
 
 
