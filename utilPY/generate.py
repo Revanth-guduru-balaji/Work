@@ -72,22 +72,23 @@ LAYOUT =  """
         >LayOut &#8250;
     </button>
 """
-BODY = f""" 
+BODY_OPENING = f""" 
     <h3 class="text-center"><b>FALL 2022 -</b> North Campus Classroom Utilization</h3>
     <div >
         <div class="row ">
             {LAYOUT}
             <div class="col">
                 <div class="grid-container ">
-                 
-                    
-                        
+                       
+"""
+BODY_CLOSING = """
                 </div>
              </div>
         </div>
     </div>
-"""
 
+
+"""
 CLOSING  = """
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -97,4 +98,50 @@ CLOSING  = """
   </body>
 </html>
 """
+
+
+import os
+from collections import defaultdict
+east_build = defaultdict(list)
+south_build = defaultdict(list)
+north_build = defaultdict(list)
+path = "UMLEAST"
+dir_list = os.listdir(path)
+for i in dir_list:
+    temp = i.split('-')
+    name = temp[0]
+    room = temp[1]
+    east_build[name].append(room)
+
+path = "UMLNORTH"
+dir_list = os.listdir(path)
+for i in dir_list:
+    temp = i.split('-')
+    name = temp[0]
+    room = temp[1]
+    north_build[name].append(room)
+
+path = "UMLSOUTH"
+dir_list = os.listdir(path)
+for i in dir_list:
+    temp = i.split('-')
+    name = temp[0]
+    room = temp[1]
+    south_build[name].append(i)
+
+sorted_build_north = sorted(north_build, key=lambda k: len(north_build[k]))
+sorted_build_south = sorted(south_build, key=lambda k: len(south_build[k]))
+sorted_build_east  = sorted(east_build, key=lambda k: len(east_build[k]))
+
+
+def build(build_dict):
+    for i in build_dict:
+        OStr=""
+        for j in i: 
+            OStr  += f"""
+                    <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
+                    {j}
+                    </div>
+                """
+           
 
