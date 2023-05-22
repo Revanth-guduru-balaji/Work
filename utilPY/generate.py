@@ -181,8 +181,8 @@ def segregate_rooms(list_rooms):
 
 def build(campus,build_dict):
     grid_items= ""
-    north_order = ["OLN","OLS","BAL","PER","SHA","SOU","FAL","DAN","PTB","GPS"]
-    south_order = ["COB","DUG","HSS","MAH","MCG","OLE","RIV","WEE"]
+    north_order = ["OLS","BAL","PER","OLN","SHA","FAL","SOU","DAN","PTB","GPS"]
+    south_order = ["WEE","OLE","DUG","MCG","HSS","MAH","RIV","COB"]
     if  campus == 'UMLNORTH':
         order = north_order
     elif campus == "UMLSOUTH":

@@ -17,7 +17,7 @@ function onCloseLayout(flag) {
 
 
 /********** Modal **********/
-document.body.style.zoom="100%"
+// document.body.style.zoom="100%"
 const modal = document.querySelector(".modal");
 const trigger = document.querySelectorAll(".triggerModal");
 const closeButton = document.querySelector(".close-button");
