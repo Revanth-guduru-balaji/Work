@@ -1,1 +1,857 @@
-{"BAL-206": {"SPACE_NAME": "BAL-206", "FORMAL_NAME": "Ball Hall 206", "MAX_CAPACITY": "36.0"}, "BAL-208": {"SPACE_NAME": "BAL-208", "FORMAL_NAME": "Ball Hall 208", "MAX_CAPACITY": "48.0"}, "BAL-210": {"SPACE_NAME": "BAL-210", "FORMAL_NAME": "Ball Hall 210", "MAX_CAPACITY": "168.0"}, "BAL-214": {"SPACE_NAME": "BAL-214", "FORMAL_NAME": "Ball Hall 214", "MAX_CAPACITY": "310.0"}, "BAL-313": {"SPACE_NAME": "BAL-313", "FORMAL_NAME": "Ball Hall 313", "MAX_CAPACITY": "24.0"}, "BAL-314": {"SPACE_NAME": "BAL-314", "FORMAL_NAME": "Ball Hall 314", "MAX_CAPACITY": "70.0"}, "BAL-323": {"SPACE_NAME": "BAL-323", "FORMAL_NAME": "Ball Hall 323", "MAX_CAPACITY": "20.0"}, "BAL-326": {"SPACE_NAME": "BAL-326", "FORMAL_NAME": "Ball Hall 326", "MAX_CAPACITY": "44.0"}, "BAL-328": {"SPACE_NAME": "BAL-328", "FORMAL_NAME": "Ball Hall 328", "MAX_CAPACITY": "46.0"}, "COB-110": {"SPACE_NAME": "COB-110", "FORMAL_NAME": "Coburn Hall 110", "MAX_CAPACITY": "48.0"}, "COB-140": {"SPACE_NAME": "COB-140", "FORMAL_NAME": "Coburn Hall 140", "MAX_CAPACITY": "48.0"}, "COB-150": {"SPACE_NAME": "COB-150", "FORMAL_NAME": "Coburn Hall 150", "MAX_CAPACITY": "45.0"}, "COB-161": {"SPACE_NAME": "COB-161", "FORMAL_NAME": "Coburn Hall 161 Educational Learning Center", "MAX_CAPACITY": "24.0"}, "COB-165": {"SPACE_NAME": "COB-165", "FORMAL_NAME": "Coburn Hall 165 Design and Discovery Center", "MAX_CAPACITY": "14.0"}, "COB-210": {"SPACE_NAME": "COB-210", "FORMAL_NAME": "Coburn Hall 210 Seminar Room ", "MAX_CAPACITY": "16.0"}, "COB-268": {"SPACE_NAME": "COB-268", "FORMAL_NAME": "Coburn Hall 268 Seminar Room", "MAX_CAPACITY": "16.0"}, "COB-G10": {"SPACE_NAME": "COB-G10", "FORMAL_NAME": "Coburn Hall G10", "MAX_CAPACITY": "48.0"}, "COB-G20": {"SPACE_NAME": "COB-G20", "FORMAL_NAME": "Coburn Hall G20", "MAX_CAPACITY": "48.0"}, "COB-G30": {"SPACE_NAME": "COB-G30", "FORMAL_NAME": "Coburn Hall G30", "MAX_CAPACITY": "60.0"}, "COB-G50": {"SPACE_NAME": "COB-G50", "FORMAL_NAME": "Coburn Hall G50 Innovation Space (TEAL)", "MAX_CAPACITY": "36.0"}, "COB-G51": {"SPACE_NAME": "COB-G51", "FORMAL_NAME": "Coburn Hall G51", "MAX_CAPACITY": "47.0"}, "COB-G65": {"SPACE_NAME": "COB-G65", "FORMAL_NAME": "Coburn Hall G65", "MAX_CAPACITY": "47.0"}, "COB-G70": {"SPACE_NAME": "COB-G70", "FORMAL_NAME": "Coburn Hall G70", "MAX_CAPACITY": "48.0"}, "COB-G80": {"SPACE_NAME": "COB-G80", "FORMAL_NAME": "Coburn Hall G80", "MAX_CAPACITY": "48.0"}, "DAN-220": {"SPACE_NAME": "DAN-220", "FORMAL_NAME": "Dandeneau Hall 220", "MAX_CAPACITY": "36.0"}, "DAN-321": {"SPACE_NAME": "DAN-321", "FORMAL_NAME": "Dandeneau Hall 321", "MAX_CAPACITY": "36.0"}, "DUG-101": {"SPACE_NAME": "DUG-101", "FORMAL_NAME": "Dugan Hall 101", "MAX_CAPACITY": "75.0"}, "DUG-102": {"SPACE_NAME": "DUG-102", "FORMAL_NAME": "Dugan Hall 102", "MAX_CAPACITY": "75.0"}, "DUG-104": {"SPACE_NAME": "DUG-104", "FORMAL_NAME": "Dugan Hall 104", "MAX_CAPACITY": "20.0"}, "DUG-105": {"SPACE_NAME": "DUG-105", "FORMAL_NAME": "Dugan Hall 105 - Registrar Assigned", "MAX_CAPACITY": "20.0"}, "DUG-206": {"SPACE_NAME": "DUG-206", "FORMAL_NAME": "Dugan Hall 206", "MAX_CAPACITY": "39.0"}, "DUG-207": {"SPACE_NAME": "DUG-207", "FORMAL_NAME": "Dugan Hall 207", "MAX_CAPACITY": "39.0"}, "DUG-208": {"SPACE_NAME": "DUG-208", "FORMAL_NAME": "Dugan Hall 208", "MAX_CAPACITY": "39.0"}, "DUG-209": {"SPACE_NAME": "DUG-209", "FORMAL_NAME": "Dugan Hall 209", "MAX_CAPACITY": "38.0"}, "DUG-210": {"SPACE_NAME": "DUG-210", "FORMAL_NAME": "Dugan Hall 210", "MAX_CAPACITY": "39.0"}, "DUG-211": {"SPACE_NAME": "DUG-211", "FORMAL_NAME": "Dugan Hall 211", "MAX_CAPACITY": "38.0"}, "FAL-105": {"SPACE_NAME": "FAL-105", "FORMAL_NAME": "Falmouth Hall 105", "MAX_CAPACITY": "28.0"}, "FAL-205": {"SPACE_NAME": "FAL-205", "FORMAL_NAME": "Falmouth Hall 205", "MAX_CAPACITY": "44.0"}, "FAL-209": {"SPACE_NAME": "FAL-209", "FORMAL_NAME": "Falmouth Hall 209", "MAX_CAPACITY": "56.0"}, "FAL-300": {"SPACE_NAME": "FAL-300", "FORMAL_NAME": "Falmouth Hall 300", "MAX_CAPACITY": "30.0"}, "FAL-309": {"SPACE_NAME": "FAL-309", "FORMAL_NAME": "Falmouth Hall 309", "MAX_CAPACITY": "47.0"}, "FAL-311": {"SPACE_NAME": "FAL-311", "FORMAL_NAME": "Falmouth Hall 311", "MAX_CAPACITY": "47.0"}, "FAL-313": {"SPACE_NAME": "FAL-313", "FORMAL_NAME": "Falmouth Hall 313", "MAX_CAPACITY": "56.0"}, "GPS-100": {"SPACE_NAME": "GPS-100", "FORMAL_NAME": "Graduate & Prof. Studies Bldg. 100", "MAX_CAPACITY": "39.0"}, "GPS-101": {"SPACE_NAME": "GPS-101", "FORMAL_NAME": "Graduate & Prof. Studies Bldg. 101", "MAX_CAPACITY": "22.0"}, "GPS-105": {"SPACE_NAME": "GPS-105", "FORMAL_NAME": "Graduate & Prof. Studies Bldg. 105", "MAX_CAPACITY": "20.0"}, "GPS-130": {"SPACE_NAME": "GPS-130", "FORMAL_NAME": "Graduate & Prof. Studies Bldg. 130", "MAX_CAPACITY": "21.0"}, "HSS-120": {"SPACE_NAME": "HSS-120", "FORMAL_NAME": "Health & Social Sciences Building 120", "MAX_CAPACITY": "62.0"}, "HSS-130": {"SPACE_NAME": "HSS-130", "FORMAL_NAME": "Health & Social Sciences Building 130", "MAX_CAPACITY": "75.0"}, "HSS-140": {"SPACE_NAME": "HSS-140", "FORMAL_NAME": "Health & Social Sciences Building 140", "MAX_CAPACITY": "76.0"}, "HSS-150": {"SPACE_NAME": "HSS-150", "FORMAL_NAME": "Health & Social Sciences Building 150", "MAX_CAPACITY": "33.0"}, "HSS-155": {"SPACE_NAME": "HSS-155", "FORMAL_NAME": "Health & Social Sciences Building 155", "MAX_CAPACITY": "30.0"}, "HSS-160": {"SPACE_NAME": "HSS-160", "FORMAL_NAME": "Health & Social Sciences Building 160", "MAX_CAPACITY": "31.0"}, "HSS-165": {"SPACE_NAME": "HSS-165", "FORMAL_NAME": "Health & Social Sciences Building 165", "MAX_CAPACITY": "34.0"}, "HSS-271": {"SPACE_NAME": "HSS-271", "FORMAL_NAME": "Health & Social Sciences Building 271", "MAX_CAPACITY": "10.0"}, "HSS-278": {"SPACE_NAME": "HSS-278", "FORMAL_NAME": "Health & Social Sciences Building 278", "MAX_CAPACITY": "8.0"}, "HSS-342": {"SPACE_NAME": "HSS-342", "FORMAL_NAME": "Health & Social Sciences Building 342", "MAX_CAPACITY": "24.0"}, "SHA-208": {"SPACE_NAME": "SHA-208", "FORMAL_NAME": "Shah Hall 208", "MAX_CAPACITY": "20.0"}, "SHA-301": {"SPACE_NAME": "SHA-301", "FORMAL_NAME": "Shah Hall 301", "MAX_CAPACITY": "50.0"}, "SHA-302": {"SPACE_NAME": "SHA-302", "FORMAL_NAME": "Shah Hall 302", "MAX_CAPACITY": "40.0"}, "SHA-303": {"SPACE_NAME": "SHA-303", "FORMAL_NAME": "Shah Hall 303", "MAX_CAPACITY": "50.0"}, "SHA-304": {"SPACE_NAME": "SHA-304", "FORMAL_NAME": "Shah Hall 304", "MAX_CAPACITY": "24.0"}, "SHA-305": {"SPACE_NAME": "SHA-305", "FORMAL_NAME": "Shah Hall 305", "MAX_CAPACITY": "70.0"}, "SHA-306": {"SPACE_NAME": "SHA-306", "FORMAL_NAME": "Shah Hall 306", "MAX_CAPACITY": "40.0"}, "SHA-308": {"SPACE_NAME": "SHA-308", "FORMAL_NAME": "Shah Hall 308", "MAX_CAPACITY": "24.0"}, "SHA-309": {"SPACE_NAME": "SHA-309", "FORMAL_NAME": "Shah Hall 309", "MAX_CAPACITY": "49.0"}, "SHA-310": {"SPACE_NAME": "SHA-310", "FORMAL_NAME": "Shah Hall 310", "MAX_CAPACITY": "52.0"}, "LYD-110": {"SPACE_NAME": "LYD-110", "FORMAL_NAME": "Lydon Library Multi Purpose Room  110", "MAX_CAPACITY": "88.0"}, "LYD-203": {"SPACE_NAME": "LYD-203", "FORMAL_NAME": "Lydon Library 203", "MAX_CAPACITY": "30.0"}, "LYD-204": {"SPACE_NAME": "LYD-204", "FORMAL_NAME": "Lydon Library 204", "MAX_CAPACITY": "45.0"}, "MAH-101": {"SPACE_NAME": "MAH-101", "FORMAL_NAME": "Mahoney Hall 101", "MAX_CAPACITY": "46.0"}, "MAH-103": {"SPACE_NAME": "MAH-103", "FORMAL_NAME": "Mahoney Hall 103", "MAX_CAPACITY": "50.0"}, "MAH-111": {"SPACE_NAME": "MAH-111", "FORMAL_NAME": "Mahoney Hall 111", "MAX_CAPACITY": "20.0"}, "MAH-116": {"SPACE_NAME": "MAH-116", "FORMAL_NAME": "Mahoney Hall Comley Lane Theater", "MAX_CAPACITY": "459.0"}, "MAH-B7": {"SPACE_NAME": "MAH-B7", "FORMAL_NAME": "Mahoney Hall B7", "MAX_CAPACITY": "43.0"}, "MAH-B8": {"SPACE_NAME": "MAH-B8", "FORMAL_NAME": "Mahoney Hall B8", "MAX_CAPACITY": "19.0"}, "MCG-310": {"SPACE_NAME": "MCG-310", "FORMAL_NAME": "McGauvran Center 310", "MAX_CAPACITY": "18.0"}, "MCG-312": {"SPACE_NAME": "MCG-312", "FORMAL_NAME": "McGauvran Center 312", "MAX_CAPACITY": "32.0"}, "MCG-313": {"SPACE_NAME": "MCG-313", "FORMAL_NAME": "McGauvran Center 313", "MAX_CAPACITY": "43.0"}, "MCG-315": {"SPACE_NAME": "MCG-315", "FORMAL_NAME": "McGauvran Center 315", "MAX_CAPACITY": "16.0"}, "OLE-140": {"SPACE_NAME": "OLE-140", "FORMAL_NAME": "O'Leary Library 140", "MAX_CAPACITY": "32.0"}, "OLE-200": {"SPACE_NAME": "OLE-200", "FORMAL_NAME": "O'Leary Library 200", "MAX_CAPACITY": "50.0"}, "OLE-200A": {"SPACE_NAME": "OLE-200A", "FORMAL_NAME": "O'Leary Library 200A", "MAX_CAPACITY": "25.0"}, "OLE-200B": {"SPACE_NAME": "OLE-200B", "FORMAL_NAME": "O'Leary Library 200B", "MAX_CAPACITY": "25.0"}, "OLE-222": {"SPACE_NAME": "OLE-222", "FORMAL_NAME": "O'Leary Library 222", "MAX_CAPACITY": "178.0"}, "OLE-237": {"SPACE_NAME": "OLE-237", "FORMAL_NAME": "O'Leary Library 237", "MAX_CAPACITY": "25.0"}, "OLE-300A": {"SPACE_NAME": "OLE-300A", "FORMAL_NAME": "O'Leary Library 300A", "MAX_CAPACITY": "18.0"}, "OLE-300B": {"SPACE_NAME": "OLE-300B", "FORMAL_NAME": "O'Leary Library 300B", "MAX_CAPACITY": "24.0"}, "OLE-325": {"SPACE_NAME": "OLE-325", "FORMAL_NAME": "O'Leary  Library 325", "MAX_CAPACITY": "24.0"}, "OLE-327": {"SPACE_NAME": "OLE-327", "FORMAL_NAME": "O'Leary Library 327", "MAX_CAPACITY": "35.0"}, "OLE-329": {"SPACE_NAME": "OLE-329", "FORMAL_NAME": "O'Leary Library 329", "MAX_CAPACITY": "19.0"}, "OLE-331": {"SPACE_NAME": "OLE-331", "FORMAL_NAME": "O'Leary Library 331", "MAX_CAPACITY": "12.0"}, "OLE-485": {"SPACE_NAME": "OLE-485", "FORMAL_NAME": "O'Leary Library 485", "MAX_CAPACITY": "20.0"}, "OLE-517": {"SPACE_NAME": "OLE-517", "FORMAL_NAME": "O'Leary Library 517", "MAX_CAPACITY": "25.0"}, "OLE-528": {"SPACE_NAME": "OLE-528", "FORMAL_NAME": "O'Leary Library 528", "MAX_CAPACITY": "25.0"}, "OLN-115": {"SPACE_NAME": "OLN-115", "FORMAL_NAME": "Olney Hall 115", "MAX_CAPACITY": "41.0"}, "OLN-150": {"SPACE_NAME": "OLN-150", "FORMAL_NAME": "Olney Hall 150", "MAX_CAPACITY": "460.0"}, "OLN-204": {"SPACE_NAME": "OLN-204", "FORMAL_NAME": "Olney Hall 204", "MAX_CAPACITY": "60.0"}, "OLN-212": {"SPACE_NAME": "OLN-212", "FORMAL_NAME": "Olney Hall 212", "MAX_CAPACITY": "24.0"}, "OLN-218": {"SPACE_NAME": "OLN-218", "FORMAL_NAME": "Olney Hall 218", "MAX_CAPACITY": "60.0"}, "OLN-316": {"SPACE_NAME": "OLN-316", "FORMAL_NAME": "Olney Hall 316", "MAX_CAPACITY": "49.0"}, "OLN-517": {"SPACE_NAME": "OLN-517", "FORMAL_NAME": "Olney Hall 517", "MAX_CAPACITY": "60.0"}, "OLN-519": {"SPACE_NAME": "OLN-519", "FORMAL_NAME": "Olney Hall 519", "MAX_CAPACITY": "41.0"}, "OLS-102": {"SPACE_NAME": "OLS-102", "FORMAL_NAME": "Olsen Hall 102", "MAX_CAPACITY": "88.0"}, "OLS-103": {"SPACE_NAME": "OLS-103", "FORMAL_NAME": "Olsen Hall 103", "MAX_CAPACITY": "31.0"}, "OLS-104": {"SPACE_NAME": "OLS-104", "FORMAL_NAME": "Olsen Hall 104", "MAX_CAPACITY": "60.0"}, "OLS-106": {"SPACE_NAME": "OLS-106", "FORMAL_NAME": "Olsen Hall 106", "MAX_CAPACITY": "24.0"}, "OLS-109": {"SPACE_NAME": "OLS-109", "FORMAL_NAME": "Olsen Hall 109", "MAX_CAPACITY": "65.0"}, "OLS-114": {"SPACE_NAME": "OLS-114", "FORMAL_NAME": "Olsen Hall 114", "MAX_CAPACITY": "44.0"}, "OLS-300": {"SPACE_NAME": "OLS-300", "FORMAL_NAME": "Olsen Hall 300", "MAX_CAPACITY": "100.0"}, "OLS-313": {"SPACE_NAME": "OLS-313", "FORMAL_NAME": "Olsen Hall 313", "MAX_CAPACITY": "19.0"}, "OLS-322": {"SPACE_NAME": "OLS-322", "FORMAL_NAME": "Olsen Hall 322 - TEAL", "MAX_CAPACITY": "34.0"}, "OLS-330": {"SPACE_NAME": "OLS-330", "FORMAL_NAME": "Olsen Hall 330 - TEAL", "MAX_CAPACITY": "64.0"}, "OLS-335": {"SPACE_NAME": "OLS-335", "FORMAL_NAME": "Olsen Hall 335", "MAX_CAPACITY": "19.0"}, "OLS-340": {"SPACE_NAME": "OLS-340", "FORMAL_NAME": "Olsen Hall 340", "MAX_CAPACITY": "38.0"}, "OLS-341": {"SPACE_NAME": "OLS-341", "FORMAL_NAME": "Olsen Hall 341", "MAX_CAPACITY": "38.0"}, "OLS-348": {"SPACE_NAME": "OLS-348", "FORMAL_NAME": "Olsen Hall 348", "MAX_CAPACITY": "60.0"}, "OLS-349": {"SPACE_NAME": "OLS-349", "FORMAL_NAME": "Olsen Hall 349", "MAX_CAPACITY": "19.0"}, "OLS-353": {"SPACE_NAME": "OLS-353", "FORMAL_NAME": "Olsen Hall 353", "MAX_CAPACITY": "19.0"}, "OLS-401": {"SPACE_NAME": "OLS-401", "FORMAL_NAME": "Olsen Hall 401", "MAX_CAPACITY": "42.0"}, "OLS-402": {"SPACE_NAME": "OLS-402", "FORMAL_NAME": "Olsen Hall 402", "MAX_CAPACITY": "40.0"}, "OLS-403": {"SPACE_NAME": "OLS-403", "FORMAL_NAME": "Olsen Hall 403", "MAX_CAPACITY": "30.0"}, "OLS-404": {"SPACE_NAME": "OLS-404", "FORMAL_NAME": "Olsen Hall 404", "MAX_CAPACITY": "44.0"}, "OLS-405": {"SPACE_NAME": "OLS-405", "FORMAL_NAME": "Olsen Hall 405", "MAX_CAPACITY": "50.0"}, "OLS-406": {"SPACE_NAME": "OLS-406", "FORMAL_NAME": "Olsen Hall 406", "MAX_CAPACITY": "33.0"}, "OLS-407": {"SPACE_NAME": "OLS-407", "FORMAL_NAME": "Olsen Hall 407", "MAX_CAPACITY": "52.0"}, "OLS-408": {"SPACE_NAME": "OLS-408", "FORMAL_NAME": "Olsen Hall 408", "MAX_CAPACITY": "55.0"}, "OLS-410": {"SPACE_NAME": "OLS-410", "FORMAL_NAME": "Olsen Hall 410", "MAX_CAPACITY": "49.0"}, "OLS-412": {"SPACE_NAME": "OLS-412", "FORMAL_NAME": "Olsen Hall 412", "MAX_CAPACITY": "44.0"}, "OLS-503": {"SPACE_NAME": "OLS-503", "FORMAL_NAME": "Olsen Hall 503", "MAX_CAPACITY": "88.0"}, "PER-107": {"SPACE_NAME": "PER-107", "FORMAL_NAME": "Perry Hall 107", "MAX_CAPACITY": "20.0"}, "PER-109": {"SPACE_NAME": "PER-109", "FORMAL_NAME": "Perry Hall 109", "MAX_CAPACITY": "20.0"}, "PER-111": {"SPACE_NAME": "PER-111", "FORMAL_NAME": "Perry Hall 111", "MAX_CAPACITY": "16.0"}, "PIN-200": {"SPACE_NAME": "PIN-200", "FORMAL_NAME": "Pinanski Building 200", "MAX_CAPACITY": "40.0"}, "PTB-110": {"SPACE_NAME": "PTB-110", "FORMAL_NAME": "Pulichino Tong Building 110", "MAX_CAPACITY": "50.0"}, "PTB-120": {"SPACE_NAME": "PTB-120", "FORMAL_NAME": "Pulichino Tong Building 120", "MAX_CAPACITY": "48.0"}, "PTB-130": {"SPACE_NAME": "PTB-130", "FORMAL_NAME": "Pulichino Tong Building 130", "MAX_CAPACITY": "49.0"}, "PTB-140": {"SPACE_NAME": "PTB-140", "FORMAL_NAME": "Pulichino Tong Building 140", "MAX_CAPACITY": "34.0"}, "PTB-150": {"SPACE_NAME": "PTB-150", "FORMAL_NAME": "Pulichino Tong Building 150", "MAX_CAPACITY": "48.0"}, "PTB-160": {"SPACE_NAME": "PTB-160", "FORMAL_NAME": "Pulichino Tong Building 160", "MAX_CAPACITY": "39.0"}, "PTB-170": {"SPACE_NAME": "PTB-170", "FORMAL_NAME": "Pulichino Tong Building 170", "MAX_CAPACITY": "43.0"}, "PTB-180": {"SPACE_NAME": "PTB-180", "FORMAL_NAME": "Pulichino Tong Building 180", "MAX_CAPACITY": "48.0"}, "PTB-190": {"SPACE_NAME": "PTB-190", "FORMAL_NAME": "Pulichino Tong Building 190", "MAX_CAPACITY": "None"}, "PTB-222": {"SPACE_NAME": "PTB-222", "FORMAL_NAME": "Pulichino Tong Building 222", "MAX_CAPACITY": "30.0"}, "PTB-224": {"SPACE_NAME": "PTB-224", "FORMAL_NAME": "Pulichino Tong Building 224", "MAX_CAPACITY": "40.0"}, "RIV-144": {"SPACE_NAME": "RIV-144", "FORMAL_NAME": "Riverview Suites 144 - Inpatient Practice Lab", "MAX_CAPACITY": "10.0"}, "RIV-145": {"SPACE_NAME": "RIV-145", "FORMAL_NAME": "Riverview Suites 145 - Exercise Science Lab", "MAX_CAPACITY": "20.0"}, "RIV-148": {"SPACE_NAME": "RIV-148", "FORMAL_NAME": "Riverview Suites 148 - Practical Assessment & Dynamic Motion Lab", "MAX_CAPACITY": "14.0"}, "RIV-153": {"SPACE_NAME": "RIV-153", "FORMAL_NAME": "Riverview Suites 153 - Modalities Treatment Lab", "MAX_CAPACITY": "20.0"}, "RIV-154": {"SPACE_NAME": "RIV-154", "FORMAL_NAME": "Riverview Suites 154", "MAX_CAPACITY": "48.0"}, "RIV-155": {"SPACE_NAME": "RIV-155", "FORMAL_NAME": "Riverview Suites 155 - Assessment Therapeutic Lab", "MAX_CAPACITY": "20.0"}, "RIV-156": {"SPACE_NAME": "RIV-156", "FORMAL_NAME": "Riverview Suites 156", "MAX_CAPACITY": "48.0"}, "RIV-157": {"SPACE_NAME": "RIV-157", "FORMAL_NAME": "Riverview Suites 157 - Neuro Pediatric Lab", "MAX_CAPACITY": "20.0"}, "RIV-158": {"SPACE_NAME": "RIV-158", "FORMAL_NAME": "Riverview Suites 158", "MAX_CAPACITY": "72.0"}, "SOU-302": {"SPACE_NAME": "SOU-302", "FORMAL_NAME": "Southwick Hall 302", "MAX_CAPACITY": "25.0"}, "SOU-309": {"SPACE_NAME": "SOU-309", "FORMAL_NAME": "Southwick Hall 309", "MAX_CAPACITY": "25.0"}, "SOU-313": {"SPACE_NAME": "SOU-313", "FORMAL_NAME": "Southwick Hall 313", "MAX_CAPACITY": "20.0"}, "SOU-317": {"SPACE_NAME": "SOU-317", "FORMAL_NAME": "Southwick Hall 317", "MAX_CAPACITY": "25.0"}, "SOU-401": {"SPACE_NAME": "SOU-401", "FORMAL_NAME": "Southwick Hall 401", "MAX_CAPACITY": "49.0"}, "SOU-402": {"SPACE_NAME": "SOU-402", "FORMAL_NAME": "Southwick Hall 402", "MAX_CAPACITY": "20.0"}, "SOU-403": {"SPACE_NAME": "SOU-403", "FORMAL_NAME": "Southwick Hall 403", "MAX_CAPACITY": "46.0"}, "SOU-404": {"SPACE_NAME": "SOU-404", "FORMAL_NAME": "Southwick Hall 404", "MAX_CAPACITY": "40.0"}, "SOU-405": {"SPACE_NAME": "SOU-405", "FORMAL_NAME": "Southwick Hall 405", "MAX_CAPACITY": "40.0"}, "SOU-407": {"SPACE_NAME": "SOU-407", "FORMAL_NAME": "Southwick Hall 407", "MAX_CAPACITY": "60.0"}, "WAN-105": {"SPACE_NAME": "WAN-105", "FORMAL_NAME": "Wannalancit Mills CItyside", "MAX_CAPACITY": "30.0"}, "WEE-318": {"SPACE_NAME": "WEE-318", "FORMAL_NAME": "Weed Hall 318", "MAX_CAPACITY": "49.0"}, "WEE-LH1": {"SPACE_NAME": "WEE-LH1", "FORMAL_NAME": "Weed Lecture Hall 1", "MAX_CAPACITY": "153.0"}, "WEE-LH2": {"SPACE_NAME": "WEE-LH2", "FORMAL_NAME": "Weed Lecture Hall 2", "MAX_CAPACITY": "147.0"}, "WEE-LH3": {"SPACE_NAME": "WEE-LH3", "FORMAL_NAME": "Weed Lecture Hall 3", "MAX_CAPACITY": "163.0"}, "OLN-518": {"SPACE_NAME": "OLN-518", "FORMAL_NAME": "OLN-518", "MAX_CAPACITY": "30.0"}, "SOU-121": {"SPACE_NAME": "SOU-121", "FORMAL_NAME": "SOU-121", "MAX_CAPACITY": "18.0"}}
+{
+  "BAL-206": {
+    "SPACE_NAME": "BAL-206",
+    "FORMAL_NAME": "Ball Hall 206",
+    "MAX_CAPACITY": "36.0"
+  },
+  "BAL-208": {
+    "SPACE_NAME": "BAL-208",
+    "FORMAL_NAME": "Ball Hall 208",
+    "MAX_CAPACITY": "48.0"
+  },
+  "BAL-210": {
+    "SPACE_NAME": "BAL-210",
+    "FORMAL_NAME": "Ball Hall 210",
+    "MAX_CAPACITY": "168.0"
+  },
+  "BAL-214": {
+    "SPACE_NAME": "BAL-214",
+    "FORMAL_NAME": "Ball Hall 214",
+    "MAX_CAPACITY": "310.0"
+  },
+  "BAL-313": {
+    "SPACE_NAME": "BAL-313",
+    "FORMAL_NAME": "Ball Hall 313",
+    "MAX_CAPACITY": "24.0"
+  },
+  "BAL-314": {
+    "SPACE_NAME": "BAL-314",
+    "FORMAL_NAME": "Ball Hall 314",
+    "MAX_CAPACITY": "70.0"
+  },
+  "BAL-323": {
+    "SPACE_NAME": "BAL-323",
+    "FORMAL_NAME": "Ball Hall 323",
+    "MAX_CAPACITY": "20.0"
+  },
+  "BAL-326": {
+    "SPACE_NAME": "BAL-326",
+    "FORMAL_NAME": "Ball Hall 326",
+    "MAX_CAPACITY": "44.0"
+  },
+  "BAL-328": {
+    "SPACE_NAME": "BAL-328",
+    "FORMAL_NAME": "Ball Hall 328",
+    "MAX_CAPACITY": "46.0"
+  },
+  "COB-110": {
+    "SPACE_NAME": "COB-110",
+    "FORMAL_NAME": "Coburn Hall 110",
+    "MAX_CAPACITY": "48.0"
+  },
+  "COB-140": {
+    "SPACE_NAME": "COB-140",
+    "FORMAL_NAME": "Coburn Hall 140",
+    "MAX_CAPACITY": "48.0"
+  },
+  "COB-150": {
+    "SPACE_NAME": "COB-150",
+    "FORMAL_NAME": "Coburn Hall 150",
+    "MAX_CAPACITY": "45.0"
+  },
+  "COB-161": {
+    "SPACE_NAME": "COB-161",
+    "FORMAL_NAME": "Coburn Hall 161 Educational Learning Center",
+    "MAX_CAPACITY": "24.0"
+  },
+  "COB-165": {
+    "SPACE_NAME": "COB-165",
+    "FORMAL_NAME": "Coburn Hall 165 Design and Discovery Center",
+    "MAX_CAPACITY": "14.0"
+  },
+  "COB-210": {
+    "SPACE_NAME": "COB-210",
+    "FORMAL_NAME": "Coburn Hall 210 Seminar Room ",
+    "MAX_CAPACITY": "16.0"
+  },
+  "COB-268": {
+    "SPACE_NAME": "COB-268",
+    "FORMAL_NAME": "Coburn Hall 268 Seminar Room",
+    "MAX_CAPACITY": "16.0"
+  },
+  "COB-G10": {
+    "SPACE_NAME": "COB-G10",
+    "FORMAL_NAME": "Coburn Hall G10",
+    "MAX_CAPACITY": "48.0"
+  },
+  "COB-G20": {
+    "SPACE_NAME": "COB-G20",
+    "FORMAL_NAME": "Coburn Hall G20",
+    "MAX_CAPACITY": "48.0"
+  },
+  "COB-G30": {
+    "SPACE_NAME": "COB-G30",
+    "FORMAL_NAME": "Coburn Hall G30",
+    "MAX_CAPACITY": "60.0"
+  },
+  "COB-G50": {
+    "SPACE_NAME": "COB-G50",
+    "FORMAL_NAME": "Coburn Hall G50 Innovation Space (TEAL)",
+    "MAX_CAPACITY": "36.0"
+  },
+  "COB-G51": {
+    "SPACE_NAME": "COB-G51",
+    "FORMAL_NAME": "Coburn Hall G51",
+    "MAX_CAPACITY": "47.0"
+  },
+  "COB-G65": {
+    "SPACE_NAME": "COB-G65",
+    "FORMAL_NAME": "Coburn Hall G65",
+    "MAX_CAPACITY": "47.0"
+  },
+  "COB-G70": {
+    "SPACE_NAME": "COB-G70",
+    "FORMAL_NAME": "Coburn Hall G70",
+    "MAX_CAPACITY": "48.0"
+  },
+  "COB-G80": {
+    "SPACE_NAME": "COB-G80",
+    "FORMAL_NAME": "Coburn Hall G80",
+    "MAX_CAPACITY": "48.0"
+  },
+  "DAN-220": {
+    "SPACE_NAME": "DAN-220",
+    "FORMAL_NAME": "Dandeneau Hall 220",
+    "MAX_CAPACITY": "36.0"
+  },
+  "DAN-321": {
+    "SPACE_NAME": "DAN-321",
+    "FORMAL_NAME": "Dandeneau Hall 321",
+    "MAX_CAPACITY": "36.0"
+  },
+  "DUG-101": {
+    "SPACE_NAME": "DUG-101",
+    "FORMAL_NAME": "Dugan Hall 101",
+    "MAX_CAPACITY": "75.0"
+  },
+  "DUG-102": {
+    "SPACE_NAME": "DUG-102",
+    "FORMAL_NAME": "Dugan Hall 102",
+    "MAX_CAPACITY": "75.0"
+  },
+  "DUG-104": {
+    "SPACE_NAME": "DUG-104",
+    "FORMAL_NAME": "Dugan Hall 104",
+    "MAX_CAPACITY": "20.0"
+  },
+  "DUG-105": {
+    "SPACE_NAME": "DUG-105",
+    "FORMAL_NAME": "Dugan Hall 105 - Registrar Assigned",
+    "MAX_CAPACITY": "20.0"
+  },
+  "DUG-206": {
+    "SPACE_NAME": "DUG-206",
+    "FORMAL_NAME": "Dugan Hall 206",
+    "MAX_CAPACITY": "39.0"
+  },
+  "DUG-207": {
+    "SPACE_NAME": "DUG-207",
+    "FORMAL_NAME": "Dugan Hall 207",
+    "MAX_CAPACITY": "39.0"
+  },
+  "DUG-208": {
+    "SPACE_NAME": "DUG-208",
+    "FORMAL_NAME": "Dugan Hall 208",
+    "MAX_CAPACITY": "39.0"
+  },
+  "DUG-209": {
+    "SPACE_NAME": "DUG-209",
+    "FORMAL_NAME": "Dugan Hall 209",
+    "MAX_CAPACITY": "38.0"
+  },
+  "DUG-210": {
+    "SPACE_NAME": "DUG-210",
+    "FORMAL_NAME": "Dugan Hall 210",
+    "MAX_CAPACITY": "39.0"
+  },
+  "DUG-211": {
+    "SPACE_NAME": "DUG-211",
+    "FORMAL_NAME": "Dugan Hall 211",
+    "MAX_CAPACITY": "38.0"
+  },
+  "FAL-105": {
+    "SPACE_NAME": "FAL-105",
+    "FORMAL_NAME": "Falmouth Hall 105",
+    "MAX_CAPACITY": "28.0"
+  },
+  "FAL-205": {
+    "SPACE_NAME": "FAL-205",
+    "FORMAL_NAME": "Falmouth Hall 205",
+    "MAX_CAPACITY": "44.0"
+  },
+  "FAL-209": {
+    "SPACE_NAME": "FAL-209",
+    "FORMAL_NAME": "Falmouth Hall 209",
+    "MAX_CAPACITY": "56.0"
+  },
+  "FAL-300": {
+    "SPACE_NAME": "FAL-300",
+    "FORMAL_NAME": "Falmouth Hall 300",
+    "MAX_CAPACITY": "30.0"
+  },
+  "FAL-309": {
+    "SPACE_NAME": "FAL-309",
+    "FORMAL_NAME": "Falmouth Hall 309",
+    "MAX_CAPACITY": "47.0"
+  },
+  "FAL-311": {
+    "SPACE_NAME": "FAL-311",
+    "FORMAL_NAME": "Falmouth Hall 311",
+    "MAX_CAPACITY": "47.0"
+  },
+  "FAL-313": {
+    "SPACE_NAME": "FAL-313",
+    "FORMAL_NAME": "Falmouth Hall 313",
+    "MAX_CAPACITY": "56.0"
+  },
+  "GPS-100": {
+    "SPACE_NAME": "GPS-100",
+    "FORMAL_NAME": "Graduate & Prof. Studies Bldg. 100",
+    "MAX_CAPACITY": "39.0"
+  },
+  "GPS-101": {
+    "SPACE_NAME": "GPS-101",
+    "FORMAL_NAME": "Graduate & Prof. Studies Bldg. 101",
+    "MAX_CAPACITY": "22.0"
+  },
+  "GPS-105": {
+    "SPACE_NAME": "GPS-105",
+    "FORMAL_NAME": "Graduate & Prof. Studies Bldg. 105",
+    "MAX_CAPACITY": "20.0"
+  },
+  "GPS-130": {
+    "SPACE_NAME": "GPS-130",
+    "FORMAL_NAME": "Graduate & Prof. Studies Bldg. 130",
+    "MAX_CAPACITY": "21.0"
+  },
+  "HSS-120": {
+    "SPACE_NAME": "HSS-120",
+    "FORMAL_NAME": "Health & Social Sciences Building 120",
+    "MAX_CAPACITY": "62.0"
+  },
+  "HSS-130": {
+    "SPACE_NAME": "HSS-130",
+    "FORMAL_NAME": "Health & Social Sciences Building 130",
+    "MAX_CAPACITY": "75.0"
+  },
+  "HSS-140": {
+    "SPACE_NAME": "HSS-140",
+    "FORMAL_NAME": "Health & Social Sciences Building 140",
+    "MAX_CAPACITY": "76.0"
+  },
+  "HSS-150": {
+    "SPACE_NAME": "HSS-150",
+    "FORMAL_NAME": "Health & Social Sciences Building 150",
+    "MAX_CAPACITY": "33.0"
+  },
+  "HSS-155": {
+    "SPACE_NAME": "HSS-155",
+    "FORMAL_NAME": "Health & Social Sciences Building 155",
+    "MAX_CAPACITY": "30.0"
+  },
+  "HSS-160": {
+    "SPACE_NAME": "HSS-160",
+    "FORMAL_NAME": "Health & Social Sciences Building 160",
+    "MAX_CAPACITY": "31.0"
+  },
+  "HSS-165": {
+    "SPACE_NAME": "HSS-165",
+    "FORMAL_NAME": "Health & Social Sciences Building 165",
+    "MAX_CAPACITY": "34.0"
+  },
+  "HSS-271": {
+    "SPACE_NAME": "HSS-271",
+    "FORMAL_NAME": "Health & Social Sciences Building 271",
+    "MAX_CAPACITY": "10.0"
+  },
+  "HSS-278": {
+    "SPACE_NAME": "HSS-278",
+    "FORMAL_NAME": "Health & Social Sciences Building 278",
+    "MAX_CAPACITY": "8.0"
+  },
+  "HSS-342": {
+    "SPACE_NAME": "HSS-342",
+    "FORMAL_NAME": "Health & Social Sciences Building 342",
+    "MAX_CAPACITY": "24.0"
+  },
+  "SHA-208": {
+    "SPACE_NAME": "SHA-208",
+    "FORMAL_NAME": "Shah Hall 208",
+    "MAX_CAPACITY": "20.0"
+  },
+  "SHA-301": {
+    "SPACE_NAME": "SHA-301",
+    "FORMAL_NAME": "Shah Hall 301",
+    "MAX_CAPACITY": "50.0"
+  },
+  "SHA-302": {
+    "SPACE_NAME": "SHA-302",
+    "FORMAL_NAME": "Shah Hall 302",
+    "MAX_CAPACITY": "40.0"
+  },
+  "SHA-303": {
+    "SPACE_NAME": "SHA-303",
+    "FORMAL_NAME": "Shah Hall 303",
+    "MAX_CAPACITY": "50.0"
+  },
+  "SHA-304": {
+    "SPACE_NAME": "SHA-304",
+    "FORMAL_NAME": "Shah Hall 304",
+    "MAX_CAPACITY": "24.0"
+  },
+  "SHA-305": {
+    "SPACE_NAME": "SHA-305",
+    "FORMAL_NAME": "Shah Hall 305",
+    "MAX_CAPACITY": "70.0"
+  },
+  "SHA-306": {
+    "SPACE_NAME": "SHA-306",
+    "FORMAL_NAME": "Shah Hall 306",
+    "MAX_CAPACITY": "40.0"
+  },
+  "SHA-308": {
+    "SPACE_NAME": "SHA-308",
+    "FORMAL_NAME": "Shah Hall 308",
+    "MAX_CAPACITY": "24.0"
+  },
+  "SHA-309": {
+    "SPACE_NAME": "SHA-309",
+    "FORMAL_NAME": "Shah Hall 309",
+    "MAX_CAPACITY": "49.0"
+  },
+  "SHA-310": {
+    "SPACE_NAME": "SHA-310",
+    "FORMAL_NAME": "Shah Hall 310",
+    "MAX_CAPACITY": "52.0"
+  },
+  "LYD-110": {
+    "SPACE_NAME": "LYD-110",
+    "FORMAL_NAME": "Lydon Library Multi Purpose Room  110",
+    "MAX_CAPACITY": "88.0"
+  },
+  "LYD-203": {
+    "SPACE_NAME": "LYD-203",
+    "FORMAL_NAME": "Lydon Library 203",
+    "MAX_CAPACITY": "30.0"
+  },
+  "LYD-204": {
+    "SPACE_NAME": "LYD-204",
+    "FORMAL_NAME": "Lydon Library 204",
+    "MAX_CAPACITY": "45.0"
+  },
+  "MAH-101": {
+    "SPACE_NAME": "MAH-101",
+    "FORMAL_NAME": "Mahoney Hall 101",
+    "MAX_CAPACITY": "46.0"
+  },
+  "MAH-103": {
+    "SPACE_NAME": "MAH-103",
+    "FORMAL_NAME": "Mahoney Hall 103",
+    "MAX_CAPACITY": "50.0"
+  },
+  "MAH-111": {
+    "SPACE_NAME": "MAH-111",
+    "FORMAL_NAME": "Mahoney Hall 111",
+    "MAX_CAPACITY": "20.0"
+  },
+  "MAH-116": {
+    "SPACE_NAME": "MAH-116",
+    "FORMAL_NAME": "Mahoney Hall Comley Lane Theater",
+    "MAX_CAPACITY": "459.0"
+  },
+  "MAH-B7": {
+    "SPACE_NAME": "MAH-B7",
+    "FORMAL_NAME": "Mahoney Hall B7",
+    "MAX_CAPACITY": "43.0"
+  },
+  "MAH-B8": {
+    "SPACE_NAME": "MAH-B8",
+    "FORMAL_NAME": "Mahoney Hall B8",
+    "MAX_CAPACITY": "19.0"
+  },
+  "MCG-310": {
+    "SPACE_NAME": "MCG-310",
+    "FORMAL_NAME": "McGauvran Center 310",
+    "MAX_CAPACITY": "18.0"
+  },
+  "MCG-312": {
+    "SPACE_NAME": "MCG-312",
+    "FORMAL_NAME": "McGauvran Center 312",
+    "MAX_CAPACITY": "32.0"
+  },
+  "MCG-313": {
+    "SPACE_NAME": "MCG-313",
+    "FORMAL_NAME": "McGauvran Center 313",
+    "MAX_CAPACITY": "43.0"
+  },
+  "MCG-315": {
+    "SPACE_NAME": "MCG-315",
+    "FORMAL_NAME": "McGauvran Center 315",
+    "MAX_CAPACITY": "16.0"
+  },
+  "OLE-140": {
+    "SPACE_NAME": "OLE-140",
+    "FORMAL_NAME": "O'Leary Library 140",
+    "MAX_CAPACITY": "32.0"
+  },
+  "OLE-200": {
+    "SPACE_NAME": "OLE-200",
+    "FORMAL_NAME": "O'Leary Library 200",
+    "MAX_CAPACITY": "50.0"
+  },
+  "OLE-200A": {
+    "SPACE_NAME": "OLE-200A",
+    "FORMAL_NAME": "O'Leary Library 200A",
+    "MAX_CAPACITY": "25.0"
+  },
+  "OLE-200B": {
+    "SPACE_NAME": "OLE-200B",
+    "FORMAL_NAME": "O'Leary Library 200B",
+    "MAX_CAPACITY": "25.0"
+  },
+  "OLE-222": {
+    "SPACE_NAME": "OLE-222",
+    "FORMAL_NAME": "O'Leary Library 222",
+    "MAX_CAPACITY": "178.0"
+  },
+  "OLE-237": {
+    "SPACE_NAME": "OLE-237",
+    "FORMAL_NAME": "O'Leary Library 237",
+    "MAX_CAPACITY": "25.0"
+  },
+  "OLE-300A": {
+    "SPACE_NAME": "OLE-300A",
+    "FORMAL_NAME": "O'Leary Library 300A",
+    "MAX_CAPACITY": "18.0"
+  },
+  "OLE-300B": {
+    "SPACE_NAME": "OLE-300B",
+    "FORMAL_NAME": "O'Leary Library 300B",
+    "MAX_CAPACITY": "24.0"
+  },
+  "OLE-325": {
+    "SPACE_NAME": "OLE-325",
+    "FORMAL_NAME": "O'Leary  Library 325",
+    "MAX_CAPACITY": "24.0"
+  },
+  "OLE-327": {
+    "SPACE_NAME": "OLE-327",
+    "FORMAL_NAME": "O'Leary Library 327",
+    "MAX_CAPACITY": "35.0"
+  },
+  "OLE-329": {
+    "SPACE_NAME": "OLE-329",
+    "FORMAL_NAME": "O'Leary Library 329",
+    "MAX_CAPACITY": "19.0"
+  },
+  "OLE-331": {
+    "SPACE_NAME": "OLE-331",
+    "FORMAL_NAME": "O'Leary Library 331",
+    "MAX_CAPACITY": "12.0"
+  },
+  "OLE-485": {
+    "SPACE_NAME": "OLE-485",
+    "FORMAL_NAME": "O'Leary Library 485",
+    "MAX_CAPACITY": "20.0"
+  },
+  "OLE-517": {
+    "SPACE_NAME": "OLE-517",
+    "FORMAL_NAME": "O'Leary Library 517",
+    "MAX_CAPACITY": "25.0"
+  },
+  "OLE-528": {
+    "SPACE_NAME": "OLE-528",
+    "FORMAL_NAME": "O'Leary Library 528",
+    "MAX_CAPACITY": "25.0"
+  },
+  "OLN-115": {
+    "SPACE_NAME": "OLN-115",
+    "FORMAL_NAME": "Olney Hall 115",
+    "MAX_CAPACITY": "41.0"
+  },
+  "OLN-150": {
+    "SPACE_NAME": "OLN-150",
+    "FORMAL_NAME": "Olney Hall 150",
+    "MAX_CAPACITY": "460.0"
+  },
+  "OLN-204": {
+    "SPACE_NAME": "OLN-204",
+    "FORMAL_NAME": "Olney Hall 204",
+    "MAX_CAPACITY": "60.0"
+  },
+  "OLN-212": {
+    "SPACE_NAME": "OLN-212",
+    "FORMAL_NAME": "Olney Hall 212",
+    "MAX_CAPACITY": "24.0"
+  },
+  "OLN-218": {
+    "SPACE_NAME": "OLN-218",
+    "FORMAL_NAME": "Olney Hall 218",
+    "MAX_CAPACITY": "60.0"
+  },
+  "OLN-316": {
+    "SPACE_NAME": "OLN-316",
+    "FORMAL_NAME": "Olney Hall 316",
+    "MAX_CAPACITY": "49.0"
+  },
+  "OLN-517": {
+    "SPACE_NAME": "OLN-517",
+    "FORMAL_NAME": "Olney Hall 517",
+    "MAX_CAPACITY": "60.0"
+  },
+  "OLN-519": {
+    "SPACE_NAME": "OLN-519",
+    "FORMAL_NAME": "Olney Hall 519",
+    "MAX_CAPACITY": "41.0"
+  },
+  "OLS-102": {
+    "SPACE_NAME": "OLS-102",
+    "FORMAL_NAME": "Olsen Hall 102",
+    "MAX_CAPACITY": "88.0"
+  },
+  "OLS-103": {
+    "SPACE_NAME": "OLS-103",
+    "FORMAL_NAME": "Olsen Hall 103",
+    "MAX_CAPACITY": "31.0"
+  },
+  "OLS-104": {
+    "SPACE_NAME": "OLS-104",
+    "FORMAL_NAME": "Olsen Hall 104",
+    "MAX_CAPACITY": "60.0"
+  },
+  "OLS-106": {
+    "SPACE_NAME": "OLS-106",
+    "FORMAL_NAME": "Olsen Hall 106",
+    "MAX_CAPACITY": "24.0"
+  },
+  "OLS-109": {
+    "SPACE_NAME": "OLS-109",
+    "FORMAL_NAME": "Olsen Hall 109",
+    "MAX_CAPACITY": "65.0"
+  },
+  "OLS-114": {
+    "SPACE_NAME": "OLS-114",
+    "FORMAL_NAME": "Olsen Hall 114",
+    "MAX_CAPACITY": "44.0"
+  },
+  "OLS-300": {
+    "SPACE_NAME": "OLS-300",
+    "FORMAL_NAME": "Olsen Hall 300",
+    "MAX_CAPACITY": "100.0"
+  },
+  "OLS-313": {
+    "SPACE_NAME": "OLS-313",
+    "FORMAL_NAME": "Olsen Hall 313",
+    "MAX_CAPACITY": "19.0"
+  },
+  "OLS-322": {
+    "SPACE_NAME": "OLS-322",
+    "FORMAL_NAME": "Olsen Hall 322 - TEAL",
+    "MAX_CAPACITY": "34.0"
+  },
+  "OLS-330": {
+    "SPACE_NAME": "OLS-330",
+    "FORMAL_NAME": "Olsen Hall 330 - TEAL",
+    "MAX_CAPACITY": "64.0"
+  },
+  "OLS-335": {
+    "SPACE_NAME": "OLS-335",
+    "FORMAL_NAME": "Olsen Hall 335",
+    "MAX_CAPACITY": "19.0"
+  },
+  "OLS-340": {
+    "SPACE_NAME": "OLS-340",
+    "FORMAL_NAME": "Olsen Hall 340",
+    "MAX_CAPACITY": "38.0"
+  },
+  "OLS-341": {
+    "SPACE_NAME": "OLS-341",
+    "FORMAL_NAME": "Olsen Hall 341",
+    "MAX_CAPACITY": "38.0"
+  },
+  "OLS-348": {
+    "SPACE_NAME": "OLS-348",
+    "FORMAL_NAME": "Olsen Hall 348",
+    "MAX_CAPACITY": "60.0"
+  },
+  "OLS-349": {
+    "SPACE_NAME": "OLS-349",
+    "FORMAL_NAME": "Olsen Hall 349",
+    "MAX_CAPACITY": "19.0"
+  },
+  "OLS-353": {
+    "SPACE_NAME": "OLS-353",
+    "FORMAL_NAME": "Olsen Hall 353",
+    "MAX_CAPACITY": "19.0"
+  },
+  "OLS-401": {
+    "SPACE_NAME": "OLS-401",
+    "FORMAL_NAME": "Olsen Hall 401",
+    "MAX_CAPACITY": "42.0"
+  },
+  "OLS-402": {
+    "SPACE_NAME": "OLS-402",
+    "FORMAL_NAME": "Olsen Hall 402",
+    "MAX_CAPACITY": "40.0"
+  },
+  "OLS-403": {
+    "SPACE_NAME": "OLS-403",
+    "FORMAL_NAME": "Olsen Hall 403",
+    "MAX_CAPACITY": "30.0"
+  },
+  "OLS-404": {
+    "SPACE_NAME": "OLS-404",
+    "FORMAL_NAME": "Olsen Hall 404",
+    "MAX_CAPACITY": "44.0"
+  },
+  "OLS-405": {
+    "SPACE_NAME": "OLS-405",
+    "FORMAL_NAME": "Olsen Hall 405",
+    "MAX_CAPACITY": "50.0"
+  },
+  "OLS-406": {
+    "SPACE_NAME": "OLS-406",
+    "FORMAL_NAME": "Olsen Hall 406",
+    "MAX_CAPACITY": "33.0"
+  },
+  "OLS-407": {
+    "SPACE_NAME": "OLS-407",
+    "FORMAL_NAME": "Olsen Hall 407",
+    "MAX_CAPACITY": "52.0"
+  },
+  "OLS-408": {
+    "SPACE_NAME": "OLS-408",
+    "FORMAL_NAME": "Olsen Hall 408",
+    "MAX_CAPACITY": "55.0"
+  },
+  "OLS-410": {
+    "SPACE_NAME": "OLS-410",
+    "FORMAL_NAME": "Olsen Hall 410",
+    "MAX_CAPACITY": "49.0"
+  },
+  "OLS-412": {
+    "SPACE_NAME": "OLS-412",
+    "FORMAL_NAME": "Olsen Hall 412",
+    "MAX_CAPACITY": "44.0"
+  },
+  "OLS-503": {
+    "SPACE_NAME": "OLS-503",
+    "FORMAL_NAME": "Olsen Hall 503",
+    "MAX_CAPACITY": "88.0"
+  },
+  "PER-107": {
+    "SPACE_NAME": "PER-107",
+    "FORMAL_NAME": "Perry Hall 107",
+    "MAX_CAPACITY": "20.0"
+  },
+  "PER-109": {
+    "SPACE_NAME": "PER-109",
+    "FORMAL_NAME": "Perry Hall 109",
+    "MAX_CAPACITY": "20.0"
+  },
+  "PER-111": {
+    "SPACE_NAME": "PER-111",
+    "FORMAL_NAME": "Perry Hall 111",
+    "MAX_CAPACITY": "16.0"
+  },
+  "PIN-200": {
+    "SPACE_NAME": "PIN-200",
+    "FORMAL_NAME": "Pinanski Building 200",
+    "MAX_CAPACITY": "40.0"
+  },
+  "PTB-110": {
+    "SPACE_NAME": "PTB-110",
+    "FORMAL_NAME": "Pulichino Tong Building 110",
+    "MAX_CAPACITY": "50.0"
+  },
+  "PTB-120": {
+    "SPACE_NAME": "PTB-120",
+    "FORMAL_NAME": "Pulichino Tong Building 120",
+    "MAX_CAPACITY": "48.0"
+  },
+  "PTB-130": {
+    "SPACE_NAME": "PTB-130",
+    "FORMAL_NAME": "Pulichino Tong Building 130",
+    "MAX_CAPACITY": "49.0"
+  },
+  "PTB-140": {
+    "SPACE_NAME": "PTB-140",
+    "FORMAL_NAME": "Pulichino Tong Building 140",
+    "MAX_CAPACITY": "34.0"
+  },
+  "PTB-150": {
+    "SPACE_NAME": "PTB-150",
+    "FORMAL_NAME": "Pulichino Tong Building 150",
+    "MAX_CAPACITY": "48.0"
+  },
+  "PTB-160": {
+    "SPACE_NAME": "PTB-160",
+    "FORMAL_NAME": "Pulichino Tong Building 160",
+    "MAX_CAPACITY": "39.0"
+  },
+  "PTB-170": {
+    "SPACE_NAME": "PTB-170",
+    "FORMAL_NAME": "Pulichino Tong Building 170",
+    "MAX_CAPACITY": "43.0"
+  },
+  "PTB-180": {
+    "SPACE_NAME": "PTB-180",
+    "FORMAL_NAME": "Pulichino Tong Building 180",
+    "MAX_CAPACITY": "48.0"
+  },
+  "PTB-190": {
+    "SPACE_NAME": "PTB-190",
+    "FORMAL_NAME": "Pulichino Tong Building 190",
+    "MAX_CAPACITY": "None"
+  },
+  "PTB-222": {
+    "SPACE_NAME": "PTB-222",
+    "FORMAL_NAME": "Pulichino Tong Building 222",
+    "MAX_CAPACITY": "30.0"
+  },
+  "PTB-224": {
+    "SPACE_NAME": "PTB-224",
+    "FORMAL_NAME": "Pulichino Tong Building 224",
+    "MAX_CAPACITY": "40.0"
+  },
+  "RIV-144": {
+    "SPACE_NAME": "RIV-144",
+    "FORMAL_NAME": "Riverview Suites 144 - Inpatient Practice Lab",
+    "MAX_CAPACITY": "10.0"
+  },
+  "RIV-145": {
+    "SPACE_NAME": "RIV-145",
+    "FORMAL_NAME": "Riverview Suites 145 - Exercise Science Lab",
+    "MAX_CAPACITY": "20.0"
+  },
+  "RIV-148": {
+    "SPACE_NAME": "RIV-148",
+    "FORMAL_NAME": "Riverview Suites 148 - Practical Assessment & Dynamic Motion Lab",
+    "MAX_CAPACITY": "14.0"
+  },
+  "RIV-153": {
+    "SPACE_NAME": "RIV-153",
+    "FORMAL_NAME": "Riverview Suites 153 - Modalities Treatment Lab",
+    "MAX_CAPACITY": "20.0"
+  },
+  "RIV-154": {
+    "SPACE_NAME": "RIV-154",
+    "FORMAL_NAME": "Riverview Suites 154",
+    "MAX_CAPACITY": "48.0"
+  },
+  "RIV-155": {
+    "SPACE_NAME": "RIV-155",
+    "FORMAL_NAME": "Riverview Suites 155 - Assessment Therapeutic Lab",
+    "MAX_CAPACITY": "20.0"
+  },
+  "RIV-156": {
+    "SPACE_NAME": "RIV-156",
+    "FORMAL_NAME": "Riverview Suites 156",
+    "MAX_CAPACITY": "48.0"
+  },
+  "RIV-157": {
+    "SPACE_NAME": "RIV-157",
+    "FORMAL_NAME": "Riverview Suites 157 - Neuro Pediatric Lab",
+    "MAX_CAPACITY": "20.0"
+  },
+  "RIV-158": {
+    "SPACE_NAME": "RIV-158",
+    "FORMAL_NAME": "Riverview Suites 158",
+    "MAX_CAPACITY": "72.0"
+  },
+  "SOU-302": {
+    "SPACE_NAME": "SOU-302",
+    "FORMAL_NAME": "Southwick Hall 302",
+    "MAX_CAPACITY": "25.0"
+  },
+  "SOU-309": {
+    "SPACE_NAME": "SOU-309",
+    "FORMAL_NAME": "Southwick Hall 309",
+    "MAX_CAPACITY": "25.0"
+  },
+  "SOU-313": {
+    "SPACE_NAME": "SOU-313",
+    "FORMAL_NAME": "Southwick Hall 313",
+    "MAX_CAPACITY": "20.0"
+  },
+  "SOU-317": {
+    "SPACE_NAME": "SOU-317",
+    "FORMAL_NAME": "Southwick Hall 317",
+    "MAX_CAPACITY": "25.0"
+  },
+  "SOU-401": {
+    "SPACE_NAME": "SOU-401",
+    "FORMAL_NAME": "Southwick Hall 401",
+    "MAX_CAPACITY": "49.0"
+  },
+  "SOU-402": {
+    "SPACE_NAME": "SOU-402",
+    "FORMAL_NAME": "Southwick Hall 402",
+    "MAX_CAPACITY": "20.0"
+  },
+  "SOU-403": {
+    "SPACE_NAME": "SOU-403",
+    "FORMAL_NAME": "Southwick Hall 403",
+    "MAX_CAPACITY": "46.0"
+  },
+  "SOU-404": {
+    "SPACE_NAME": "SOU-404",
+    "FORMAL_NAME": "Southwick Hall 404",
+    "MAX_CAPACITY": "40.0"
+  },
+  "SOU-405": {
+    "SPACE_NAME": "SOU-405",
+    "FORMAL_NAME": "Southwick Hall 405",
+    "MAX_CAPACITY": "40.0"
+  },
+  "SOU-407": {
+    "SPACE_NAME": "SOU-407",
+    "FORMAL_NAME": "Southwick Hall 407",
+    "MAX_CAPACITY": "60.0"
+  },
+  "WAN-105": {
+    "SPACE_NAME": "WAN-105",
+    "FORMAL_NAME": "Wannalancit Mills CItyside",
+    "MAX_CAPACITY": "30.0"
+  },
+  "WEE-318": {
+    "SPACE_NAME": "WEE-318",
+    "FORMAL_NAME": "Weed Hall 318",
+    "MAX_CAPACITY": "49.0"
+  },
+  "WEE-LH1": {
+    "SPACE_NAME": "WEE-LH1",
+    "FORMAL_NAME": "Weed Lecture Hall 1",
+    "MAX_CAPACITY": "153.0"
+  },
+  "WEE-LH2": {
+    "SPACE_NAME": "WEE-LH2",
+    "FORMAL_NAME": "Weed Lecture Hall 2",
+    "MAX_CAPACITY": "147.0"
+  },
+  "WEE-LH3": {
+    "SPACE_NAME": "WEE-LH3",
+    "FORMAL_NAME": "Weed Lecture Hall 3",
+    "MAX_CAPACITY": "163.0"
+  },
+  "OLN-518": {
+    "SPACE_NAME": "OLN-518",
+    "FORMAL_NAME": "OLN-518",
+    "MAX_CAPACITY": "30.0"
+  },
+  "SOU-121": {
+    "SPACE_NAME": "SOU-121",
+    "FORMAL_NAME": "SOU-121",
+    "MAX_CAPACITY": "18.0"
+  }
+}

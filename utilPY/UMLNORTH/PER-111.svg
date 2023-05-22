@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="50" viewBox="0 0 60 50" fill="none">
-                    <rect fill="#ec7e79" width="60" height="50" />
-                    <text x="26" y="30" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">.0</text>
+                    <rect fill="#f7eec3" width="60" height="50" />
+                    <text x="26" y="30" text-anchor="middle" font-family="Frutiger" font-size="16" font-weight="bold" fill="black">.375</text>
                     <text x="26" y="45" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">PER-111</text>
                 </svg>

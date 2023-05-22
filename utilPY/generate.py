@@ -11,7 +11,16 @@ halls = {
     "FAL":"Falmouth Hall",
     "OLN":"Olney Hall",
     "OLS":"Olsen Hall",
-    "PTB":"Pulichino Tong Business Center"
+    "PTB":"Pulichino Tong Business Center",
+    "COB":"Coburn Hall",
+    "DUG":"Dugan Hall",
+    "HSS":"Health & Social Sciences Building",
+    "MAH":"Mahoney Hall",
+    "MCG":"McGauvran Center",
+    "OLE":"O’Leary Library",
+    "RIV":"Riverview Suites",
+    "WEE":"Weed Hall",
+    "WAN":"Wannalancit Business Center",
     }
 
 HEAD = """
@@ -136,25 +145,52 @@ for i in dir_list:
     south_build[name].append(room)
 
 
-def build(campus,build_dict):
-    sorted_build = sorted(build_dict, key=lambda k: len(build_dict[k]))
-    grid_items= ""
-    for build in sorted_build:
-        floors = [ ]
-        segregated_list = []
-        rooms = list(map(int,build_dict[build]))
+def segregate_rooms(list_rooms):
+    alphanumeric_list = []
+    numeric_list = []
+
+    for element in list_rooms:
+        if element.isdigit():
+            numeric_list.append(int(element))
+        else:
+            alphanumeric_list.append(element)
+
+    sorted_alphanumeric = sorted(alphanumeric_list)
+    sorted_numeric = sorted(numeric_list)
+
+    # now segregate the list
+    if len(sorted_alphanumeric):
+        segregated_list = [tuple(sorted_alphanumeric)]
+    else:
+        segregated_list  = []
+    if len(sorted_numeric):
+        rooms = sorted_numeric
         current_range = [rooms[0]] 
-         # Start with the first number as the initial range
+            # Start with the first number as the initial range
         for i in range(1,len(rooms)):
-            diff = rooms[i] - rooms[i-1]
-            if diff <= 100:
+            diff = rooms[i]//100 - rooms[i-1]//100
+            if diff == 0:
                 current_range.append(rooms[i])
             else:
                 segregated_list.append(tuple(current_range))
                 current_range = [rooms[i]]
+        segregated_list.append(current_range)
+    return segregated_list
 
-        # Add the last range to the segregated list
-        segregated_list.append(tuple(current_range))
+
+
+def build(campus,build_dict):
+    grid_items= ""
+    north_order = ["OLN","OLS","BAL","PER","SHA","SOU","FAL","DAN","PTB","GPS"]
+    south_order = ["COB","DUG","HSS","MAH","MCG","OLE","RIV","WEE"]
+    if  campus == 'UMLNORTH':
+        order = north_order
+    elif campus == "UMLSOUTH":
+        order = south_order
+    else:
+        order = ['WAN']
+    for build in order:
+        segregated_list = segregate_rooms(build_dict[build])
         rows = ""
         for i in segregated_list[::-1]:
             items=""
@@ -175,13 +211,13 @@ def build(campus,build_dict):
                         <div class="grid-item d-flex align-items-end">
                              <div class="container">
                              {rows}
-                            <h5 class="row align-items-end">{halls[build]}</h5>
+                            <h5 class="row align-items-end">{halls[build].upper()}</h5>
                             </div>
                         </div>
                     """
     return HEAD+BODY_OPENING+grid_items+BODY_CLOSING+CLOSING
 
-for i in ["UMLNORTH"]: # need to pass ,"UMLSOUTH","UMLEAST"
+for i in ["UMLNORTH","UMLSOUTH","UMLEAST"]: # need to pass ,"UMLSOUTH","UMLEAST"
     if i=="UMLNORTH":
         building = north_build 
         page="North.html"
