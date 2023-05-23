@@ -38,6 +38,8 @@ HEAD = """
     <style>
         .Imagecontainer {
             transform: translate(-50% -50%);
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 30px;
         }
         .grid-container {
           display: flex;
@@ -49,11 +51,11 @@ HEAD = """
         }
         .grid-item {
           flex-basis: auto; /* Adjust the percentage value as needed */
-          margin: 50px 0 0 70px; /* Adjust the margins as needed */ /* top | right | bottom | left */
+          margin: 50px 50px 0 0px; /* Adjust the margins as needed */ /* top | right | bottom | left */
         }
         .no-padding-col {
           padding-left: 0;
-          padding-right: 10px;
+          padding-right: 5px;
           padding-top: 5px;
         }
         /************** Modal **************/	
@@ -115,12 +117,55 @@ HEAD = """
       size: 11in 17in;
       margin: 0;
     }
+        #container {
+      width: 100%;
+      /* Set any desired styles for the container */
+    }
+
+    #svg-element {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Media queries for different screen sizes */
+    @media (max-width: 767px) {
+      #svg-element {
+        /* Define the desired width and height for smaller screens */
+        width: 200px;
+        height: auto; /* Maintain aspect ratio */
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #svg-element {
+        /* Define the desired width and height for medium-sized screens */
+        width: 300px;
+        height: auto; /* Maintain aspect ratio */
+      }
+    }
+
+    @media (min-width: 1024px) {
+      #svg-element {
+        /* Define the desired width and height for larger screens */
+        width:120%;
+        height:auto;/* Maintain aspect ratio */
+      }
+      .no-padding-col {
+          padding-left: 0;
+          padding-right: 20px;
+          padding-top: 5px;
+      }
+    }
+    .row {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
     </style>
   </head>
   <body>
 """
 LAYOUT =  f"""
-    <div class="col-sm-4 Imagecontainer">
+    <div class="col-sm-auto col-lg-auto col-md-auto col-xs-auto Imagecontainer">
         <div>
             <div class="d-flex justify-content-end ">
                 <button onclick="onCloseLayout(true)">&#10006;</button>
@@ -146,7 +191,7 @@ BODY_OPENING = f"""
         <div class="row ">
             {LAYOUT}
             <div class="col">
-                <div class="grid-container ">
+                <div class="grid-container  d-flex justify-content-between">
                        
 """
 BODY_CLOSING = """
@@ -265,7 +310,7 @@ def build(campus,build_dict):
                 anchor_path = "HTML"+"/"+build +"-"+str(j)+"_schedDetail.html"
                 items += f"""
                     <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
-                        <a href="{anchor_path}"><img src="{path}" alt="" /></a>
+                        <a href="{anchor_path}"><img src="{path}" id="svg-element" alt="" /></a>
                     </div>
                     """
             rows+= f"""

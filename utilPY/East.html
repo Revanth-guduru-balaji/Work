@@ -14,6 +14,8 @@
   <style>
    .Imagecontainer {
             transform: translate(-50% -50%);
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 30px;
         }
         .grid-container {
           display: flex;
@@ -25,11 +27,11 @@
         }
         .grid-item {
           flex-basis: auto; /* Adjust the percentage value as needed */
-          margin: 50px 0 0 70px; /* Adjust the margins as needed */ /* top | right | bottom | left */
+          margin: 50px 50px 0 0px; /* Adjust the margins as needed */ /* top | right | bottom | left */
         }
         .no-padding-col {
           padding-left: 0;
-          padding-right: 10px;
+          padding-right: 5px;
           padding-top: 5px;
         }
         /************** Modal **************/	
@@ -91,6 +93,49 @@
       size: 11in 17in;
       margin: 0;
     }
+        #container {
+      width: 100%;
+      /* Set any desired styles for the container */
+    }
+
+    #svg-element {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Media queries for different screen sizes */
+    @media (max-width: 767px) {
+      #svg-element {
+        /* Define the desired width and height for smaller screens */
+        width: 200px;
+        height: auto; /* Maintain aspect ratio */
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #svg-element {
+        /* Define the desired width and height for medium-sized screens */
+        width: 300px;
+        height: auto; /* Maintain aspect ratio */
+      }
+    }
+
+    @media (min-width: 1024px) {
+      #svg-element {
+        /* Define the desired width and height for larger screens */
+        width:120%;
+        height:auto;/* Maintain aspect ratio */
+      }
+      .no-padding-col {
+          padding-left: 0;
+          padding-right: 20px;
+          padding-top: 5px;
+      }
+    }
+    .row {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
   </style>
  </head>
  <body>
@@ -106,7 +151,7 @@
   </h6>
   <div>
    <div class="row">
-    <div class="col-sm-4 Imagecontainer">
+    <div class="col-sm-auto col-lg-auto col-md-auto col-xs-auto Imagecontainer">
      <div>
       <div class="d-flex justify-content-end">
        <button onclick="onCloseLayout(true)">
@@ -124,13 +169,13 @@
      </button>
     </div>
     <div class="col">
-     <div class="grid-container">
+     <div class="grid-container d-flex justify-content-between">
       <div class="grid-item d-flex align-items-end">
        <div class="container triggerModal">
         <div class="row align-items-end">
          <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
           <a href="HTML/WAN-105_schedDetail.html">
-           <img alt="" src="UMLEAST/WAN-105.svg"/>
+           <img alt="" id="svg-element" src="UMLEAST/WAN-105.svg"/>
           </a>
          </div>
         </div>
