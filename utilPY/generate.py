@@ -124,7 +124,7 @@ HEAD = """
 
     #svg-element {
       width: 100%;
-      height: auto;
+      height: 120%;
     }
 
     /* Media queries for different screen sizes */
@@ -147,14 +147,10 @@ HEAD = """
     @media (min-width: 1024px) {
       #svg-element {
         /* Define the desired width and height for larger screens */
-        width:120%;
-        height:auto;/* Maintain aspect ratio */
+        width:100%;
+        height:100%;    /* Maintain aspect ratio */
       }
-      .no-padding-col {
-          padding-left: 0;
-          padding-right: 20px;
-          padding-top: 5px;
-      }
+      
     }
     .row {
       margin-left: 0px;
