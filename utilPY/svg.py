@@ -237,30 +237,30 @@ def rmSize(seats,rmName,lblUtil,color):
     if seats>0 and seats<17:
         #small.svg
         return f"""
-               <svg xmlns="http://www.w3.org/2000/svg" width="23.1" height="22.2" viewBox="0 0 23.1 22.2" fill="none">
-                    <rect fill="{color}" width="23.1" height="22.2" />
-                    <text x="10" y="16" text-anchor="middle" font-family="Frutiger" font-size="4" font-weight="bold" fill="black">{lblUtil}</text>
-                    <text x="10" y="20" text-anchor="middle" font-family="Frutiger" font-size="4" fill="black">{rmName}</text>
+               <svg xmlns="http://www.w3.org/2000/svg"  width="50" height="45" viewBox="0 0 50 45" fill="none">
+                    <rect fill="{color}" width="50" height="45" />
+                    <text x="25" y="26" text-anchor="middle" font-family="Frutiger" font-size="12" font-weight="bold" fill="black">{lblUtil}</text>
+                    <text x="25" y="40" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
                 </svg>
                 """
     elif seats>17 and seats<34:
         #polygon.svg
         return f"""
-              <svg xmlns="http://www.w3.org/2000/svg" width="30.24" height="22.2" viewBox="0 0 30.24 22.2" fill="none">
-                <rect fill="{color}" width="30.24" height="22.2" />
-                <text x="15" y="16" text-anchor="middle" font-family="Frutiger" font-size="4" font-weight="bold" fill="black">{lblUtil}</text>
-                <text x="15" y="20" text-anchor="middle" font-family="Frutiger" font-size="4" fill="black">{rmName}</text>
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="60" viewBox="0 0 50 60" fill="none">
+                <rect fill="{color}" width="50" height="60" />
+                <text x="25" y="43" text-anchor="middle" font-family="Frutiger" font-size="12" font-weight="bold" fill="black">{lblUtil}</text>
+                <text x="25" y="55" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
             </svg>
                 """
     elif seats>34 and seats<50:
         #circle.svg for mdeium
         return f""" 
                             
-                <svg xmlns="http://www.w3.org/2000/svg" width="23.1" height="29.1" viewBox="0 0 23.1 29.1" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="64" viewBox="0 0 50 64" fill="none">
                 <!-- Hexagon above the square -->
-                <polygon points="1,29.1 29.1,29.1 23.1,29.1 29.1,0 10,0 1,10" fill="{color}" stroke="{color}" />
-                <text x="12" y="24" text-anchor="middle" font-family="Frutiger" font-size="4" font-weight="bold" fill="black">{lblUtil}</text>
-                <text x="12" y="28" text-anchor="middle" font-family="Frutiger" font-size="4" fill="black">{rmName}</text>
+                <polygon points="1,64 64,64 50,64 64,0 10,0 1,10" fill="{color}" stroke="{color}" />
+                <text x="25" y="47" text-anchor="middle" font-family="Frutiger" font-size="12" font-weight="bold" fill="black">{lblUtil}</text>
+                <text x="25" y="59" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
                 </svg>
 
 
@@ -269,10 +269,10 @@ def rmSize(seats,rmName,lblUtil,color):
         #large.svg for  large
         return f"""
                                 
-                <svg xmlns="http://www.w3.org/2000/svg" width="23.1" height="29.3" viewBox="0 0 23.1 29.3" fill="none">
-                <rect fill="{color}" width="23.1" height="29.3" />
-                <text x="12" y="24" text-anchor="middle" font-family="Frutiger" font-size="4" font-weight="bold"  fill="black">{lblUtil}</text>
-                <text x="12" y="28" text-anchor="middle" font-family="Frutiger" font-size="4" fill="black">{rmName}</text>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="68" viewBox="0 0 50 68" fill="none">
+                <rect fill="{color}" width="50" height="68" />
+                <text x="25" y="51" text-anchor="middle" font-family="Frutiger" font-size="12" font-weight="bold"  fill="black">{lblUtil}</text>
+                <text x="25" y="63" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
                 </svg>
 
 
@@ -282,10 +282,10 @@ def rmSize(seats,rmName,lblUtil,color):
         #lecture.svg for lecture
         return f"""
                 
-                <svg xmlns="http://www.w3.org/2000/svg" width="36.2" height="29.3" viewBox="0 0 36.2 29.3" fill="none">
-                <rect fill="{color}" width="36.2" height="29.3" />
-                <text x="16.5" y="24" text-anchor="middle" font-family="Frutiger" font-size="4" font-weight="bold" fill="black">{lblUtil}</text>
-                <text x="16.5" y="28" text-anchor="middle" font-family="Frutiger" font-size="4" fill="black">{rmName}</text>
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="68" viewBox="0 0 70 68" fill="none">
+                <rect fill="{color}" width="70" height="68" />
+                <text x="35" y="51" text-anchor="middle" font-family="Frutiger" font-size="12" font-weight="bold" fill="black">{lblUtil}</text>
+                <text x="35" y="63" text-anchor="middle" font-family="Frutiger" font-size="12" fill="black">{rmName}</text>
                 </svg>
 
 
