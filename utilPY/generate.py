@@ -56,6 +56,65 @@ HEAD = """
           padding-right: 10px;
           padding-top: 5px;
         }
+        /************** Modal **************/	
+      .modal_NTBT {	
+        position: fixed;	
+        left: 0;	
+        top: 0;	
+        width: 100%;	
+        height: 100%;	
+        background-color: rgba(0, 0, 0, 0.5);	
+        opacity: 0;	
+        visibility: hidden;	
+        transform: scale(1.1);	
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s,	
+          transform 0.25s;	
+      }	
+      .modal-content_NTBT {	
+        position: absolute;	
+        top: 50%;	
+        left: 50%;	
+        transform: translate(-50%, -50%);	
+        background-color: white;	
+        padding: 1rem 1.5rem;	
+        width: auto;	
+        max-height: 80vh;	
+        overflow: auto;	
+        display: flex;	
+        flex-direction: row-reverse;	
+      }	
+      .contents_NTBT {	
+        margin: 2.5rem;	
+      }	
+      .close-button_NTBT {	
+        display: flex;	
+        font-size: larger;	
+        font-weight: bolder;	
+        align-items: center;	
+        justify-content: center;	
+        width: 1.5rem;	
+        height: 2rem;	
+        cursor: pointer;	
+        background-color: rgb(0, 0, 0);	
+        color: white;	
+      }	
+      .close-button_NTBT:hover {	
+        background-color: darkgray;	
+        color: black;	
+      }	
+      .show-modal_NTBT {	
+        opacity: 1;	
+        visibility: visible;	
+        transform: scale(1);	
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;	
+      }	
+      .triggerModal:hover {	
+        cursor: pointer;	
+      }
+     @page {
+      size: 11in 17in;
+      margin: 0;
+    }
     </style>
   </head>
   <body>
@@ -67,7 +126,7 @@ LAYOUT =  f"""
                 <button onclick="onCloseLayout(true)">&#10006;</button>
             </div>
             <div class="d-flex justify-content-end ">
-                <img class="triggerModal" src="{layout_path}" alt="" />
+                <img  src="{layout_path}" alt="" />
             </div>
         </div>
     </div>
@@ -99,6 +158,13 @@ BODY_CLOSING = """
 
 """
 CLOSING  = """
+ <!-- Modal -->
+    <div class="modal_NTBT">
+      <div class="modal-content_NTBT">
+        <button class="close-button_NTBT" style="padding: 0px;">&times;</button>
+        <div class="contents_NTBT"></div>
+      </div>
+    </div>
   <script>
     let timestamp1 = document.getElementById("timestamp1");
     let timestamp = Date.now();
@@ -209,7 +275,7 @@ def build(campus,build_dict):
                     """
         grid_items+=  f"""
                         <div class="grid-item d-flex align-items-end">
-                             <div class="container">
+                             <div class="container triggerModal">
                              {rows}
                             <h5 class="row align-items-end">{halls[build].upper()}</h5>
                             </div>

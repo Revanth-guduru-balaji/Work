@@ -32,6 +32,65 @@
           padding-right: 10px;
           padding-top: 5px;
         }
+        /************** Modal **************/	
+      .modal_NTBT {	
+        position: fixed;	
+        left: 0;	
+        top: 0;	
+        width: 100%;	
+        height: 100%;	
+        background-color: rgba(0, 0, 0, 0.5);	
+        opacity: 0;	
+        visibility: hidden;	
+        transform: scale(1.1);	
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s,	
+          transform 0.25s;	
+      }	
+      .modal-content_NTBT {	
+        position: absolute;	
+        top: 50%;	
+        left: 50%;	
+        transform: translate(-50%, -50%);	
+        background-color: white;	
+        padding: 1rem 1.5rem;	
+        width: auto;	
+        max-height: 80vh;	
+        overflow: auto;	
+        display: flex;	
+        flex-direction: row-reverse;	
+      }	
+      .contents_NTBT {	
+        margin: 2.5rem;	
+      }	
+      .close-button_NTBT {	
+        display: flex;	
+        font-size: larger;	
+        font-weight: bolder;	
+        align-items: center;	
+        justify-content: center;	
+        width: 1.5rem;	
+        height: 2rem;	
+        cursor: pointer;	
+        background-color: rgb(0, 0, 0);	
+        color: white;	
+      }	
+      .close-button_NTBT:hover {	
+        background-color: darkgray;	
+        color: black;	
+      }	
+      .show-modal_NTBT {	
+        opacity: 1;	
+        visibility: visible;	
+        transform: scale(1);	
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;	
+      }	
+      .triggerModal:hover {	
+        cursor: pointer;	
+      }
+      @page {
+      size: 11in 17in;
+      margin: 0;
+    }
   </style>
  </head>
  <body>
@@ -55,7 +114,7 @@
        </button>
       </div>
       <div class="d-flex justify-content-end">
-       <img alt="" class="triggerModal" src="../assets/Layout.PNG"/>
+       <img alt="" src="../assets/Layout.PNG"/>
       </div>
      </div>
     </div>
@@ -67,62 +126,7 @@
     <div class="col">
      <div class="grid-container">
       <div class="grid-item d-flex align-items-end">
-       <div class="container">
-        <div class="row align-items-end">
-         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
-          <a href="HTML/OLN-517_schedDetail.html">
-           <img alt="" src="UMLNORTH/OLN-517.svg"/>
-          </a>
-         </div>
-         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
-          <a href="HTML/OLN-518_schedDetail.html">
-           <img alt="" src="UMLNORTH/OLN-518.svg"/>
-          </a>
-         </div>
-         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
-          <a href="HTML/OLN-519_schedDetail.html">
-           <img alt="" src="UMLNORTH/OLN-519.svg"/>
-          </a>
-         </div>
-        </div>
-        <div class="row align-items-end">
-         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
-          <a href="HTML/OLN-316_schedDetail.html">
-           <img alt="" src="UMLNORTH/OLN-316.svg"/>
-          </a>
-         </div>
-        </div>
-        <div class="row align-items-end">
-         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
-          <a href="HTML/OLN-204_schedDetail.html">
-           <img alt="" src="UMLNORTH/OLN-204.svg"/>
-          </a>
-         </div>
-         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
-          <a href="HTML/OLN-218_schedDetail.html">
-           <img alt="" src="UMLNORTH/OLN-218.svg"/>
-          </a>
-         </div>
-        </div>
-        <div class="row align-items-end">
-         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
-          <a href="HTML/OLN-115_schedDetail.html">
-           <img alt="" src="UMLNORTH/OLN-115.svg"/>
-          </a>
-         </div>
-         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
-          <a href="HTML/OLN-150_schedDetail.html">
-           <img alt="" src="UMLNORTH/OLN-150.svg"/>
-          </a>
-         </div>
-        </div>
-        <h5 class="row align-items-end">
-         OLNEY HALL
-        </h5>
-       </div>
-      </div>
-      <div class="grid-item d-flex align-items-end">
-       <div class="container">
+       <div class="container triggerModal">
         <div class="row align-items-end">
          <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
           <a href="HTML/OLS-503_schedDetail.html">
@@ -267,7 +271,7 @@
        </div>
       </div>
       <div class="grid-item d-flex align-items-end">
-       <div class="container">
+       <div class="container triggerModal">
         <div class="row align-items-end">
          <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
           <a href="HTML/BAL-313_schedDetail.html">
@@ -323,7 +327,7 @@
        </div>
       </div>
       <div class="grid-item d-flex align-items-end">
-       <div class="container">
+       <div class="container triggerModal">
         <div class="row align-items-end">
          <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
           <a href="HTML/PER-107_schedDetail.html">
@@ -347,7 +351,62 @@
        </div>
       </div>
       <div class="grid-item d-flex align-items-end">
-       <div class="container">
+       <div class="container triggerModal">
+        <div class="row align-items-end">
+         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
+          <a href="HTML/OLN-517_schedDetail.html">
+           <img alt="" src="UMLNORTH/OLN-517.svg"/>
+          </a>
+         </div>
+         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
+          <a href="HTML/OLN-518_schedDetail.html">
+           <img alt="" src="UMLNORTH/OLN-518.svg"/>
+          </a>
+         </div>
+         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
+          <a href="HTML/OLN-519_schedDetail.html">
+           <img alt="" src="UMLNORTH/OLN-519.svg"/>
+          </a>
+         </div>
+        </div>
+        <div class="row align-items-end">
+         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
+          <a href="HTML/OLN-316_schedDetail.html">
+           <img alt="" src="UMLNORTH/OLN-316.svg"/>
+          </a>
+         </div>
+        </div>
+        <div class="row align-items-end">
+         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
+          <a href="HTML/OLN-204_schedDetail.html">
+           <img alt="" src="UMLNORTH/OLN-204.svg"/>
+          </a>
+         </div>
+         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
+          <a href="HTML/OLN-218_schedDetail.html">
+           <img alt="" src="UMLNORTH/OLN-218.svg"/>
+          </a>
+         </div>
+        </div>
+        <div class="row align-items-end">
+         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
+          <a href="HTML/OLN-115_schedDetail.html">
+           <img alt="" src="UMLNORTH/OLN-115.svg"/>
+          </a>
+         </div>
+         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
+          <a href="HTML/OLN-150_schedDetail.html">
+           <img alt="" src="UMLNORTH/OLN-150.svg"/>
+          </a>
+         </div>
+        </div>
+        <h5 class="row align-items-end">
+         OLNEY HALL
+        </h5>
+       </div>
+      </div>
+      <div class="grid-item d-flex align-items-end">
+       <div class="container triggerModal">
         <div class="row align-items-end">
          <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
           <a href="HTML/SHA-301_schedDetail.html">
@@ -403,7 +462,38 @@
        </div>
       </div>
       <div class="grid-item d-flex align-items-end">
-       <div class="container">
+       <div class="container triggerModal">
+        <div class="row align-items-end">
+         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
+          <a href="HTML/FAL-309_schedDetail.html">
+           <img alt="" src="UMLNORTH/FAL-309.svg"/>
+          </a>
+         </div>
+         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
+          <a href="HTML/FAL-311_schedDetail.html">
+           <img alt="" src="UMLNORTH/FAL-311.svg"/>
+          </a>
+         </div>
+         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
+          <a href="HTML/FAL-313_schedDetail.html">
+           <img alt="" src="UMLNORTH/FAL-313.svg"/>
+          </a>
+         </div>
+        </div>
+        <div class="row align-items-end">
+         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
+          <a href="HTML/FAL-209_schedDetail.html">
+           <img alt="" src="UMLNORTH/FAL-209.svg"/>
+          </a>
+         </div>
+        </div>
+        <h5 class="row align-items-end">
+         FALMOUTH HALL
+        </h5>
+       </div>
+      </div>
+      <div class="grid-item d-flex align-items-end">
+       <div class="container triggerModal">
         <div class="row align-items-end">
          <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
           <a href="HTML/SOU-302_schedDetail.html">
@@ -439,38 +529,7 @@
        </div>
       </div>
       <div class="grid-item d-flex align-items-end">
-       <div class="container">
-        <div class="row align-items-end">
-         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
-          <a href="HTML/FAL-309_schedDetail.html">
-           <img alt="" src="UMLNORTH/FAL-309.svg"/>
-          </a>
-         </div>
-         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
-          <a href="HTML/FAL-311_schedDetail.html">
-           <img alt="" src="UMLNORTH/FAL-311.svg"/>
-          </a>
-         </div>
-         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
-          <a href="HTML/FAL-313_schedDetail.html">
-           <img alt="" src="UMLNORTH/FAL-313.svg"/>
-          </a>
-         </div>
-        </div>
-        <div class="row align-items-end">
-         <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
-          <a href="HTML/FAL-209_schedDetail.html">
-           <img alt="" src="UMLNORTH/FAL-209.svg"/>
-          </a>
-         </div>
-        </div>
-        <h5 class="row align-items-end">
-         FALMOUTH HALL
-        </h5>
-       </div>
-      </div>
-      <div class="grid-item d-flex align-items-end">
-       <div class="container">
+       <div class="container triggerModal">
         <div class="row align-items-end">
          <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
           <a href="HTML/DAN-321_schedDetail.html">
@@ -491,7 +550,7 @@
        </div>
       </div>
       <div class="grid-item d-flex align-items-end">
-       <div class="container">
+       <div class="container triggerModal">
         <div class="row align-items-end">
          <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
           <a href="HTML/PTB-222_schedDetail.html">
@@ -552,7 +611,7 @@
        </div>
       </div>
       <div class="grid-item d-flex align-items-end">
-       <div class="container">
+       <div class="container triggerModal">
         <div class="row align-items-end">
          <div class="col-xs-auto col-sm-auto col-md-auto col-lg-auto no-padding-col">
           <a href="HTML/GPS-100_schedDetail.html">
@@ -571,6 +630,16 @@
        </div>
       </div>
      </div>
+    </div>
+   </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal_NTBT">
+   <div class="modal-content_NTBT">
+    <button class="close-button_NTBT" style="padding: 0px;">
+     ×
+    </button>
+    <div class="contents_NTBT">
     </div>
    </div>
   </div>

@@ -16,28 +16,25 @@ function onCloseLayout(flag) {
   
 
 
-/********** Modal **********/
-// document.body.style.zoom="100%"
-const modal = document.querySelector(".modal");
-const trigger = document.querySelectorAll(".triggerModal");
-const closeButton = document.querySelector(".close-button");
-const modalMainContent = document.querySelector(".contents");
+/********** Modal **********/	
+const modal = document.querySelector(".modal_NTBT");	
+const trigger = document.querySelectorAll(".triggerModal");	
+const closeButton = document.querySelector(".close-button_NTBT");	
+const modalMainContent = document.querySelector(".contents_NTBT");	
+function toggleModal() {	
+  modal.classList.add("show-modal_NTBT");	
+  let child = this.cloneNode(true);	
+  modalMainContent.appendChild(child);	
+}	
+trigger.forEach((modalElement) => {	
+  modalElement.addEventListener("click", toggleModal);	
+});	
+closeButton.addEventListener(	
+  "click",	
+  () => {	
+    modal.classList.remove("show-modal_NTBT");	
+    modalMainContent.removeChild(modalMainContent.firstChild);	
+  },	
+  false	
+);	
 
-function toggleModal() {
-  modal.classList.add("show-modal");
-  let child = this.cloneNode(true);
-  modalMainContent.appendChild(child);
-}
-
-trigger.forEach((modalElement) => {
-  modalElement.addEventListener("click", toggleModal);
-});
-
-closeButton.addEventListener(
-  "click",
-  () => {
-    modal.classList.remove("show-modal");
-    modalMainContent.removeChild(modalMainContent.firstChild);
-  },
-  false
-);
